@@ -1,0 +1,8 @@
+{
+  "name": "example-grunt-project",
+  "version": "1.0.0",
+  "description": "Webteam ongoing refactor to discover, discuss, and document our own best practice.",
+  "devDependencies": {
+    "grunt": "~0.4.4"
+  }
+}
