@@ -8,6 +8,9 @@ After the most recent "Deep Dive" where we discussed a wide array of topics I de
 #### This repository starts to touch on several of these topics including: 
 **1. Wordpress & Dependancy Management (using grunt)
 **2. Wordpress & Project Setup
+
+![alt text](https://cdn.tutsplus.com/wp/authors/tom/Screen-Shot-2013-01-09-at-12.21.02-PM.png "One Does Not Simply Put Files Anywhere")
+
 **3. Wordpress & Bootstrap
 **4. Wordpress & Less
 
