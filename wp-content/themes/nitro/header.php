@@ -34,7 +34,7 @@
               <a class="navbar-brand" href="#">Nitro</a>
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-5">
-              <p class="navbar-text navbar-right">Built by<a href="#" class="navbar-link">Net@Work Webteam</a></p>
+              <p class="navbar-text navbar-right">Built by <a href="#" class="navbar-link">Net@Work Webteam</a></p>
             </div>
           </div>
         </nav>
