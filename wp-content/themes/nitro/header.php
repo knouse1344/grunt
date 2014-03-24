@@ -14,21 +14,27 @@
  <?php bloginfo('name'); ?>
 </title>
 
-
-<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-<!--[if lt IE 9]>
-  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-  <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-<![endif]-->
-	<!-- Google Font -->
-	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
-<!-- Favicons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ page.base_url }}docs-assets/ico/apple-touch-icon-144-precomposed.png">
-
-<!--PLACE - Google Analytics Code - HERE-->
-
 <?php wp_head(); ?>
     
  </head>
 
-<?php echo 'i am the header'; ?>
+   <!-- Wrap all page content here -->
+    <div id="wrap">
+
+        <!-- HEADER NAVIGATION -->
+        <nav class="navbar navbar-default navbar-static-top" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">Nitro</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-5">
+              <p class="navbar-text navbar-right">Built by<a href="#" class="navbar-link">Net@Work Webteam</a></p>
+            </div>
+          </div>
+        </nav>
