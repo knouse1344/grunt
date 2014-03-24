@@ -76,12 +76,14 @@ Add your new (project) origin repository to your working copy:
 
     git remote add origin <url_here>
 
-## Upgrading Wordpress
+## Wordpress
 
-After installing this boilerplate, keeping Wordpress up-to-date via git is
-pretty easy.
+Install Wordpress
 
-Go to the submodule directory:
+    cd <root directory>
+    git submodule add git://github.com/WordPress/WordPress.git wordpress
+
+Upgrade Wordpress Go to the submodule directory:
 
     cd wordpress
 
