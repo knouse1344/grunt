@@ -1,6 +1,3 @@
-<html> 
-<body>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -27,18 +24,11 @@
 	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
 <!-- Favicons -->
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ page.base_url }}docs-assets/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="shortcut icon" href="{{ page.base_url }}docs-assets/ico/favicon.png">
 
 <!--PLACE - Google Analytics Code - HERE-->
 
-<?php 
-    /* Always have wp_head() just before the closing </head>
-     * tag of your theme, or you will break many plugins, which
-     * generally use this hook to add elements to <head> such
-     * as styles, scripts, and meta tags.
-     */
-    wp_head();
- ?>
+<?php wp_head(); ?>
+    
  </head>
 
 <?php echo 'i am the header'; ?>
