@@ -4,3 +4,6 @@
 [submodule "wp-content/plugins/github-updater"]
 	path = wp-content/plugins/github-updater
 	url = git@github.com:afragen/github-updater.git
+[submodule "wp-content/plugins/post-type_press"]
+	path = wp-content/plugins/post-type_press
+	url = git@github.com:NetatWork/post-type_press.git
