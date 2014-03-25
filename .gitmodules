@@ -1,3 +1,6 @@
 [submodule "wordpress"]
 	path = wordpress
 	url = git://github.com/WordPress/WordPress.git
+[submodule "wp-content/plugins/github-updater"]
+	path = wp-content/plugins/github-updater
+	url = git@github.com:afragen/github-updater.git
