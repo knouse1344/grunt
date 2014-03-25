@@ -6,19 +6,21 @@ Example Grunt Project
 After the most recent "Deep Dive" where we discussed a wide array of topics I decided to create an repository we could all use to branch out (pun intended). 
 
 #### This repository starts to touch on several of these topics including: 
-**1. Wordpress & Dependancy Management (using grunt)
-**2. Wordpress & Project Setup
+
+* Wordpress & Dependancy Management (using grunt)
+* Wordpress & Project Setup
 
 ![alt text](https://cdn.tutsplus.com/wp/authors/tom/Screen-Shot-2013-01-09-at-12.21.02-PM.png "One Does Not Simply Put Files Anywhere")
 
-**3. Wordpress & Bootstrap
-**4. Wordpress & Less
+* Wordpress & Bootstrap
+* Wordpress & Less
 
 #### Some Important Topics Not Reflected Here (YET)
-**1. Wordpress & Data Architecture (Custom Post Types, MetaBox)
-**2. Wordpress & Theme Development (Post Format, Metabox) 
-**3. Wordpress & E-Commerce (eg WooCommerce)
-**4. Wordpress Management (eg manageWP)
+
+* Wordpress & Data Architecture (Custom Post Types, MetaBox)
+* Wordpress & Theme Development (Post Format, Metabox) 
+* Wordpress & E-Commerce (eg WooCommerce)
+* Wordpress Management (eg manageWP)
 
 Webteam ongoing refactor to discover, discuss, and document our own best practice. 
 
