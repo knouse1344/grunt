@@ -79,6 +79,15 @@ class Post_Type_Press {
 		 */
 		add_action( '@TODO', array( $this, 'action_method_name' ) );
 		add_filter( '@TODO', array( $this, 'filter_method_name' ) );
+        
+        function press_custom_init() {
+            $args = array(
+              'public' => true,
+              'label'  => 'Press'
+            );
+            register_post_type( 'press', $args );
+        }
+        add_action( 'init', 'press_custom_init' );
 
 	}
 
