@@ -2,7 +2,7 @@
 /**
  * Press - Custom Post Type
  *
- * @package   Post-Type_Press
+ * @package   Post_Type_Press
  * @author    Duri Chitayat <dchitayat@netatwork.com>
  * @link      http://netatwork.com
  * @copyright 2014 Net@Work
@@ -17,10 +17,10 @@
  *
  * @TODO: Rename this class to a proper name for your plugin.
  *
- * @package Post-Type_Press
+ * @package Post_Type_Press
  * @author  Duri Chitayat <dchitayat@netatwork.com>
  */
-class Post-Type_Press {
+class Post_Type_Press {
 
 	/**
 	 * Plugin version, used for cache-busting of style and script file references.

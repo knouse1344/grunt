@@ -66,9 +66,39 @@ Install Development Dependencies (you need to have Node and Node Package Manager
     cd <root directory>
     npm install
 
+Get Latest Submodules
+
+    git submodule update --recursive
+    
+    
 ### To Create a New Project from Nitro
 
 
+Clone the repository:
+
+    git clone --recursive git@github.com:NetatWork/example-grunt-project.git
+    
+Update package.json
+
+    Edit project name and dependencies
+    
+Update gruntfile.js 
+
+    Edit tasks (if necessary)
+    
+Install Development Dependencies (you need to have Node and Node Package Manager installed on your environment)
+
+    cd <root directory>
+    npm install
+    
+Add Necessary Nitro Plugins
+
+    Git Submodule Add <plugin> 
+
+Get Latest Submodules
+
+    git submodule update --recursive
+    
 And remove this origin repository from your working copy:
 
     cd <root directory>
@@ -78,26 +108,4 @@ Add your new (project) origin repository to your working copy:
 
     git remote add origin <url_here>
 
-## Wordpress
 
-Install Wordpress
-
-    cd <root directory>
-    git submodule add git://github.com/WordPress/WordPress.git wordpress
-
-Upgrade Wordpress Go to the submodule directory:
-
-    cd wordpress
-
-Fetch the tags from git:
-
-    git fetch --tags
-
-Checkout the version you want to upgrade to (e.g. `git checkout 3.7.1`):
-
-    git checkout <tag>
-
-Commit your Wordpress upgrade:
-
-    cd ..
-    git commit -m "Updating wordpress to <tag-name>"

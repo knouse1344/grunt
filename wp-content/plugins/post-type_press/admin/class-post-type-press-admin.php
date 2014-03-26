@@ -2,7 +2,7 @@
 /**
  * Post Type Press
  *
- * @package   Post-Type_Press_Admin
+ * @package   Post_Type_Press_Admin
  * @author    Duri Chitayat <dchitayat@netatwork.com>
  * @link      http://netatwork.com
  * @copyright 2014 Net@Work
@@ -17,10 +17,10 @@
  *
  * @TODO: Rename this class to a proper name for your plugin.
  *
- * @package Post-Type_Press_Admin
+ * @package Post_Type_Press_Admin
  * @author  Duri Chitayat <dchitayat@netatwork.com>
  */
-class Post-Type_Press_Admin {
+class Post_Type_Press_Admin {
 
 	/**
 	 * Instance of this class.
@@ -62,10 +62,10 @@ class Post-Type_Press_Admin {
 		 *
 		 * @TODO:
 		 *
-		 * - Rename "Post-Type_Press" to the name of your initial plugin class
+		 * - Rename "Post_Type_Press" to the name of your initial plugin class
 		 *
 		 */
-		$plugin = Post-Type_Press::get_instance();
+		$plugin = Post_Type_Press::get_instance();
 		$this->plugin_slug = $plugin->get_plugin_slug();
 
 		// Load admin style sheet and JavaScript.
@@ -121,7 +121,7 @@ class Post-Type_Press_Admin {
 	 *
 	 * @TODO:
 	 *
-	 * - Rename "Post-Type_Press" to the name your plugin
+	 * - Rename "Post_Type_Press" to the name your plugin
 	 *
 	 * @since     1.0.0
 	 *
@@ -135,7 +135,7 @@ class Post-Type_Press_Admin {
 
 		$screen = get_current_screen();
 		if ( $this->plugin_screen_hook_suffix == $screen->id ) {
-			wp_enqueue_style( $this->plugin_slug .'-admin-styles', plugins_url( 'assets/css/admin.css', __FILE__ ), array(), Post-Type_Press::VERSION );
+			wp_enqueue_style( $this->plugin_slug .'-admin-styles', plugins_url( 'assets/css/admin.css', __FILE__ ), array(), Post_Type_Press::VERSION );
 		}
 
 	}
@@ -145,7 +145,7 @@ class Post-Type_Press_Admin {
 	 *
 	 * @TODO:
 	 *
-	 * - Rename "Post-Type_Press" to the name your plugin
+	 * - Rename "Post_Type_Press" to the name your plugin
 	 *
 	 * @since     1.0.0
 	 *
@@ -159,7 +159,7 @@ class Post-Type_Press_Admin {
 
 		$screen = get_current_screen();
 		if ( $this->plugin_screen_hook_suffix == $screen->id ) {
-			wp_enqueue_script( $this->plugin_slug . '-admin-script', plugins_url( 'assets/js/admin.js', __FILE__ ), array( 'jquery' ), Post-Type_Press::VERSION );
+			wp_enqueue_script( $this->plugin_slug . '-admin-script', plugins_url( 'assets/js/admin.js', __FILE__ ), array( 'jquery' ), Post_Type_Press::VERSION );
 		}
 
 	}

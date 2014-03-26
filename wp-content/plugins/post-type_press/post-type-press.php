@@ -8,7 +8,7 @@
  *
  * This Plugin follows WordPress Coding Standards and PHP best practices.
  *
- * @package   Post-Type_Press
+ * @package   Post_Type_Press
  * @author    Duri Chitayat <dchitayat@netatwork.com>
  * @link      http://netatwork.com
  * @copyright 2014 Net@Work
@@ -50,8 +50,8 @@ require_once( plugin_dir_path( __FILE__ ) . 'public/class-post-type-press.php' )
  * - replace Plugin_Name with the name of the class defined in
  *   `class-plugin-name.php`
  */
-register_activation_hook( __FILE__, array( 'Post-Type_Press', 'activate' ) );
-register_deactivation_hook( __FILE__, array( 'Post-Type_Press', 'deactivate' ) );
+register_activation_hook( __FILE__, array( 'Post_Type_Press', 'activate' ) );
+register_deactivation_hook( __FILE__, array( 'Post_Type_Press', 'deactivate' ) );
 
 /*
  * @TODO:
@@ -59,7 +59,7 @@ register_deactivation_hook( __FILE__, array( 'Post-Type_Press', 'deactivate' ) )
  * - replace Plugin_Name with the name of the class defined in
  *   `class-plugin-name.php`
  */
-add_action( 'plugins_loaded', array( 'Post-Type_Press', 'get_instance' ) );
+add_action( 'plugins_loaded', array( 'Post_Type_Press', 'get_instance' ) );
 
 /*----------------------------------------------------------------------------*
  * Dashboard and Administrative Functionality
@@ -69,7 +69,7 @@ add_action( 'plugins_loaded', array( 'Post-Type_Press', 'get_instance' ) );
  * @TODO:
  *
  * - replace `class-plugin-name-admin.php` with the name of the plugin's admin file
- * - replace Post-Type_Press_Admin with the name of the class defined in
+ * - replace Post_Type_Press_Admin with the name of the class defined in
  *   `class-plugin-name-admin.php`
  *
  * If you want to include Ajax within the dashboard, change the following
@@ -84,6 +84,6 @@ add_action( 'plugins_loaded', array( 'Post-Type_Press', 'get_instance' ) );
 if ( is_admin() && ( ! defined( 'DOING_AJAX' ) || ! DOING_AJAX ) ) {
 
 	require_once( plugin_dir_path( __FILE__ ) . 'admin/class-post-type-press-admin.php' );
-	add_action( 'plugins_loaded', array( 'Post-Type_Press_Admin', 'get_instance' ) );
+	add_action( 'plugins_loaded', array( 'Post_Type_Press_Admin', 'get_instance' ) );
 
 }
