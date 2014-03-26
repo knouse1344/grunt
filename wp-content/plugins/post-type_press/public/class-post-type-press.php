@@ -1,12 +1,11 @@
 <?php
 /**
- * Plugin Name.
+ * Press - Custom Post Type
  *
- * @package   Plugin_Name
- * @author    Your Name <email@example.com>
- * @license   GPL-2.0+
- * @link      http://example.com
- * @copyright 2014 Your Name or Company Name
+ * @package   Post-Type_Press
+ * @author    Duri Chitayat <dchitayat@netatwork.com>
+ * @link      http://netatwork.com
+ * @copyright 2014 Net@Work
  */
 
 /**
@@ -18,10 +17,10 @@
  *
  * @TODO: Rename this class to a proper name for your plugin.
  *
- * @package Plugin_Name
- * @author  Your Name <email@example.com>
+ * @package Post-Type_Press
+ * @author  Duri Chitayat <dchitayat@netatwork.com>
  */
-class Plugin_Name {
+class Post-Type_Press {
 
 	/**
 	 * Plugin version, used for cache-busting of style and script file references.
@@ -46,7 +45,7 @@ class Plugin_Name {
 	 *
 	 * @var      string
 	 */
-	protected $plugin_slug = 'plugin-name';
+	protected $plugin_slug = 'post-type-press';
 
 	/**
 	 * Instance of this class.
