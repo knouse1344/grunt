@@ -85,7 +85,9 @@ class Post_Type_Press {
         function press_custom_init() {
             $args = array( 
                 'label'  => 'Press',
+                'public' => true,
                 'supports' => array( 'title', 'editor', 'excerpt' )
+                
             );
             register_post_type( 'press', $args );
 	   }
