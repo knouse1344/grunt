@@ -88,22 +88,15 @@ class Post_Type_Press {
                 'hierarchical' => true,    
                 'supports' => array( 'title', 'editor', 'excerpt' ),
                 'taxonomies' => array( ),
-                'public' => true,
-                'show_ui' => true,
-                'show_in_menu' => true,                
-                'show_in_nav_menus' => true,
-                'publicly_queryable' => true,
-                'exclude_from_search' => false,
                 'has_archive' => true,
                 'query_var' => true,
                 'can_export' => true,
                 'rewrite' => true,
-                'capability_type' => 'post'
+                'menu_position' => '100'
             );
             register_post_type( 'press', $args );
 	   }
 	   add_action( 'init', 'press_custom_init' );
-	}
 
 	/**
 	 * Return the plugin slug.
