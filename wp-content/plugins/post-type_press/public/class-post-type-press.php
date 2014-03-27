@@ -97,7 +97,8 @@ class Post_Type_Press {
             register_post_type( 'press', $args );
 	   }
 	   add_action( 'init', 'press_custom_init' );
-
+    
+    }
 	/**
 	 * Return the plugin slug.
 	 *
