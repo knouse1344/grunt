@@ -28,27 +28,27 @@ Webteam ongoing refactor to discover, discuss, and document our own best practic
 
 1. Package.json: Grunt Configuration File for project name, description and basic dependancies like Less Watcher, JSHint, Concat, etc (Node Package Manager will read this file when the project is created and install these dependancies. Grunt will manage these dependancies rather than checking them into the repo, ie node_modules are listed in gitignore).
 
-| Dependency    | Version                           | Description                               | Command           |
-| ------------- | -------------                     | ------------                              | ---------------   |
-| Grunt         | "grunt": "~0.4.4"                 | Grunt... obviously                        | `grunt`           |
-| BTOA          | "btoa": "~1.1.1"                  | Uses Buffer to emulate the exact functionality of the browser's btoa | |
-| Canonical JSON | "canonical-json": "~0.0.3"       | Returns a canonical JSON format           |                   |
-| Grunt Banner  | "grunt-banner": "~0.2.0"          | Adds a simple banner to files             |                   |
-| Grunt Clean   | "grunt-contrib-clean": "~0.5.0"   | Clean files and folders                   | `grunt clean`     |
-| Grunt Concat  | "grunt-contrib-concat": "~0.3.0"  | Concatenate files                         | `grunt concat`    |
-| Grunt Connect | "grunt-contrib-connect": "~0.6.0" |Start a connect web server                 | `grunt connect`   |
-| Grunt Copy    | "grunt-contrib-copy": "~0.5.0"    | Copy files and folders                    | `grunt copy`      |
-| Grunt cssLint | "grunt-contrib-csslint": "~0.2.0" | Lint CSS files                            | `grunt cssLint`   |
-| Grunt cssMIN  | "grunt-contrib-cssmin": "~0.7.0"  | Compress CSS files                        | `grunt cssmin`    | 
-| Grunt jsHINT  | "grunt-contrib-jshint": "~0.8.0"  | Validate files with JSHint                | `grunt jshint`    |
-| Grunt LESS    | "grunt-contrib-less": "~0.9.0"    | Compile LESS files to CSS                 | `grunt Less`      |
-| Grunt Uglify  | "grunt-contrib-uglify": "~0.3.0"  | Minify files with UglifyJS                | `grunt uglify`    |
-| Grunt Watch   | "grunt-contrib-watch": "~0.5.3"   | Run predefined tasks whenever watched file patterns are added, changed or deleted | `grunt watch` |
-| Grunt cssCOMB | "grunt-csscomb": "~2.0.1"         | Sorts CSS properties in specific order    |                   |
-| Grunt Exec    | "grunt-exec": "0.4.3"             | Grunt plugin for executing shell commands |                   |
-| Grunt SED     | "grunt-sed": "~0.1.1"             | Grunt Search and Replace (eg %variable%)  |                   |
-| Grunt Tasks   | "load-grunt-tasks": "~0.3.0"      | Load multiple grunt tasks using globbing patterns | `require('load-grunt-tasks')(grunt);` |
-| Markdown      | "markdown": "~0.5.0"              | This grunt task takes a set of markdown files and converts them to HTML | |
+| Dependency    | Description   | Command       |
+| ------------- | ------------- | ------------- |
+| Grunt         | Grunt... obviously                        | `grunt`           |
+| BTOA          | Uses Buffer to emulate the exact functionality of the browser's btoa | |
+| Canonical JSON| Returns a canonical JSON format           |                   |
+| Grunt Banner  | Adds a simple banner to files             |                   |
+| Grunt Clean   | Clean files and folders                   | `grunt clean`     |
+| Grunt Concat  | Concatenate files                         | `grunt concat`    |
+| Grunt Connect |Start a connect web server                 | `grunt connect`   |
+| Grunt Copy    | Copy files and folders                    | `grunt copy`      |
+| Grunt cssLint | Lint CSS files                            | `grunt cssLint`   |
+| Grunt cssMIN  | Compress CSS files                        | `grunt cssmin`    | 
+| Grunt jsHINT  | Validate files with JSHint                | `grunt jshint`    |
+| Grunt LESS    | Compile LESS files to CSS                 | `grunt Less`      |
+| Grunt Uglify  | Minify files with UglifyJS                | `grunt uglify`    |
+| Grunt Watch   | Run predefined tasks whenever watched file patterns are added, changed or deleted | `grunt watch` |
+| Grunt cssCOMB | Sorts CSS properties in specific order    |                   |
+| Grunt Exec    | Grunt plugin for executing shell commands |                   |
+| Grunt SED     | Grunt Search and Replace (eg %variable%)  |                   |
+| Grunt Tasks   | Load multiple grunt tasks using globbing patterns | `require('load-grunt-tasks')(grunt);` |
+| Markdown      | This grunt task takes a set of markdown files and converts them to HTML | |
 
 2. Gruntfile.js: This documents the Grunt Tasks, so you can make it DO things like compile a bunch of less files from one folder into one CSS in another. Also minify, lint, test, etc. This example Gruntfile.js includes bootstrap Grunt Tasks into a folder structure that made sense to me based on Wordpress Boilerplate. Feel free to start branches on this. 
 
