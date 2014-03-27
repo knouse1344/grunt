@@ -86,7 +86,7 @@ class Post_Type_Press {
             $args = array( 
                 'label'  => 'Press',
                 'hierarchical' => true,    
-                'supports' => array( 'title', 'excerpt' ),
+                'supports' => array( 'title', 'editor', 'excerpt' ),
                 'taxonomies' => array( ),
                 'public' => true,
                 'show_ui' => true,
