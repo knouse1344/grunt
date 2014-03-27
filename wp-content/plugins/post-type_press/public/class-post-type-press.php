@@ -80,6 +80,7 @@ class Post_Type_Press {
 		add_action( '@TODO', array( $this, 'action_method_name' ) );
 		add_filter( '@TODO', array( $this, 'filter_method_name' ) );
         
+        /*FUNCTION*/
         function press_custom_init() {
             $args = array(
               'public' => true,
@@ -88,7 +89,44 @@ class Post_Type_Press {
             register_post_type( 'press', $args );
         }
         add_action( 'init', 'press_custom_init' );
+        
+        /*Original Function*/
+        function press_custom_init() {
+           /* $labels = array( 
+                'name' => _x( 'Press', 'press' ),
+                'singular_name' => _x( 'Press Post', 'press' ),
+                'add_new' => _x( 'Add New', 'press' ),
+                'add_new_item' => _x( 'Add New PressPost', 'press' ),
+                'edit_item' => _x( 'Edit PressPost', 'press' ),
+                'new_item' => _x( 'New PressPost', 'press' ),
+                'view_item' => _x( 'View PressPost', 'press' ),
+                'search_items' => _x( 'Search Press', 'press' ),
+                'not_found' => _x( 'No press found', 'press' ),
+                'not_found_in_trash' => _x( 'No press found in Trash', 'press' ),
+                'parent_item_colon' => _x( 'Parent PressPost:', 'press' ),
+                'menu_name' => _x( 'Press', 'press' ),
+            );*/
+            $args = array( 
+               // 'labels' => $labels,
+                'hierarchical' => true,    
+                'supports' => array( 'title', 'excerpt' ),
+                'taxonomies' => array( ),
+                'public' => true,
+                'show_ui' => true,
+                'show_in_menu' => true,                
+                'show_in_nav_menus' => true,
+                'publicly_queryable' => true,
+                'exclude_from_search' => false,
+                'has_archive' => true,
+                'query_var' => true,
+                'can_export' => true,
+                'rewrite' => true,
+                'capability_type' => 'post'
+            );
 
+    register_post_type( 'press', $args );
+	}
+	add_action( 'init', 'press_custom_init' );
 	}
 
 	/**
