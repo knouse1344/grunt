@@ -92,7 +92,6 @@ class Post_Type_Press {
                 'query_var' => true,
                 'can_export' => true,
                 'rewrite' => true,
-                'menu_position' => '100'
             );
             register_post_type( 'press', $args );
 	   }
