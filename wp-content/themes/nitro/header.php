@@ -31,7 +31,11 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="#">Nitro</a>
+                
+                <a class="navbar-brand" href="<?php bloginfo('url'); ?>">
+                  <img src="<?php header_image(); ?>" alt="<?php bloginfo('name'); ?>"><!--LOGO-->
+                </a>
+                
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-5">
               <p class="navbar-text navbar-right">Built by <a href="#" class="navbar-link">Net@Work Webteam</a></p>
