@@ -93,3 +93,6 @@ a img.aligncenter {
 .search-form {
     margin-top: 10px;
 }
+.navbar-text .navbar-link {
+    padding: 3px 10px;
+}
