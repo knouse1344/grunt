@@ -59,8 +59,9 @@
                     <div class="row"><!-- PRIMARY MENU -->
                         <div class="col-sm-12">
                             <p class="navbar-text navbar-right">
-                               <?php
-    $primary-menu = array(
+    
+    <?php wp_nav_menu( array(
+    
         'theme_location' => 'primary',
         'menu'            => 'menu',
         'container'       => 'container',
@@ -77,11 +78,8 @@
         'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
         'depth'           => 0,
         'walker'          => ''
-    );
-
-    wp_nav_menu( $primary-menu ); 
-
-    ?>
+    
+    )); ?>
                             </p>
                         </div>
                     </div>
