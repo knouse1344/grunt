@@ -24,21 +24,36 @@
         <!-- HEADER NAVIGATION -->
         <nav class="navbar navbar-default navbar-static-top" role="navigation">
           <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
+            <div class="navbar-header"><!-- BRAND -->
+                <div class="col-md-4">
+              
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
                 
                 <a class="navbar-brand" href="<?php bloginfo('url'); ?>">
                   <img src="<?php header_image(); ?>" alt="<?php bloginfo('name'); ?>"><!--LOGO-->
                 </a>
-                
+                    
+              </div>
             </div>
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-5">
-              <p class="navbar-text navbar-right">Built by <a href="#" class="navbar-link">Net@Work Webteam</a></p>
+              
+            <div class="col-md-8">
+                <div class="collapse navbar-collapse" id="">
+                    <div class="row">
+                        <div class="col-sm-12">
+                        <p class="navbar-text navbar-right">Built by <a href="#" class="navbar-link">Net@Work Webteam</a></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                        <p class="navbar-text navbar-right">Built by <a href="#" class="navbar-link">Net@Work Webteam</a></p>
+                        </div>
+                    </div>
+                </div>
             </div>
           </div>
         </nav>
