@@ -145,7 +145,7 @@
 
     #ADD-CLASS-TO-MENU-ITEM   
     function primary_nav_class($classes, $item){
-        $classes[] = 'dropdown';
+        $classes['page_item'] = 'dropdown';
          return $classes;
     }
     add_filter('nav_menu_css_class' , 'primary_nav_class' , 10 , 2);
