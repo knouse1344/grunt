@@ -77,9 +77,9 @@
     #CUSTOM-HEADER
     $headerargs = array(
         'flex-width'    => true,
-        'width'         => 120,
+        'width'         => 200,
         'flex-height'    => true,
-        'height'        => 70,
+        'height'        => 55,
         'default-image' => get_template_directory_uri() . '/images/header.jpg',
         'uploads'       => true,
     );
