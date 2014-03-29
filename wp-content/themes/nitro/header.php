@@ -38,8 +38,8 @@
                         <div class="col-sm-12">
                             <ul class="nav" id="utility-nav">
                                 <li class="navbar-right"><?php get_search_form(); ?></li>
-                                <li class="navbar-text navbar-right"><a href="#" class="navbar-link"><span class="glyphicon glyphicon glyphicon-earphone"></span>Remote Support</a></li>
-                                <li class="navbar-text navbar-right"><a href="#" class="navbar-link"><span class="glyphicon glyphicon glyphicon-earphone"></span>1-800-719-3307</a></li>
+                                <li class="navbar-text navbar-right"><a href="#" class="navbar-link"><span class="glyphicon glyphicon glyphicon-earphone"></span> Remote Support</a></li>
+                                <li class="navbar-text navbar-right"><a href="#" class="navbar-link"><span class="glyphicon glyphicon glyphicon-earphone"></span> 1-800-719-3307</a></li>
                             </ul>
                         </div>
                     </div><!-- UTILITY MENU END-->
