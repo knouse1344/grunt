@@ -83,6 +83,13 @@
         'uploads'       => true,
     );
     add_theme_support( 'custom-header', $headerargs );
+    
+    #CUSTOM-BACKGROUND
+    $backgroundargs = array(
+        'default-color' => 'f2f2f2',
+        'default-image' => get_template_directory_uri() . '/images/background.jpg',
+    );
+    add_theme_support( 'custom-background', $backgroundargs );
 
 #SHORTCODES
     #@TODO: Locate and enable shortcodes
