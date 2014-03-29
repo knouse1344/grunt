@@ -135,24 +135,21 @@
 
 #HEADER
     #ADD-CLASS-TO-MENU-ITEM
-    add_filter('nav_menu_css_class' , 'special_nav_class' , 10 , 2);
     function special_nav_class($classes, $item){
          if( in_array('current-menu-item', $classes) ){
             $classes[] = 'active ';
          }
          return $classes;
     }
+    add_filter('nav_menu_css_class' , 'special_nav_class' , 10 , 2);
 
-    #ADD-CLASS-TO-MENU-ITEM
-    add_filter('nav_menu_css_class' , 'primary_nav_class' , 10 , 2);
+    #ADD-CLASS-TO-MENU-ITEM   
     function primary_nav_class($classes, $item){
-         if( in_array('page_item', $classes) ){
-            $classes[] = 'dropdown';
-         }
+        $classes[] = 'dropdown';
          return $classes;
     }
-    
-    
+    add_filter('nav_menu_css_class' , 'primary_nav_class' , 10 , 2);
+
     #PRIMARY-NAV-MENU
     register_nav_menu( 'primary', 'Primary Menu' );
 
