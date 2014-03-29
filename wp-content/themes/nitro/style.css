@@ -103,3 +103,8 @@ a img.aligncenter {
     padding-top: 10px;
     padding-bottom: 10px;
 }
+#primary > li > a {
+    font-size: 1.3em;
+    font-weight: 200;
+    text-transform: uppercase;
+}
