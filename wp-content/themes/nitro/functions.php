@@ -146,7 +146,7 @@
 
     #ADD-CLASS-TO-MENU-ITEM   
     function primary_nav_class($classes, $item){
-        $classes['page_item'] = 'dropdown';
+        $classes['page_item'] = 'dropdown navbar-right';
          return $classes;
     }
     add_filter('nav_menu_css_class' , 'primary_nav_class' , 10 , 2);
