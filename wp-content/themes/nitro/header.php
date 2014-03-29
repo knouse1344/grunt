@@ -15,7 +15,7 @@
     <div id="wrap">
 
         
-        <nav class="navbar navbar-default navbar-static-top" role="navigation"><!-- HEADER NAV START -->
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" id="header"><!-- HEADER NAV START -->
           <div class="container">
               
             <div class="col-md-4"> <!-- HEADER LEFT START--> 
@@ -33,8 +33,8 @@
             </div><!-- HEADER LEFT END--> 
               
             <div class="col-sm-8"><!--HEADER RIGHT START-->
-                <div class="collapse navbar-collapse" id="">               
-                    <div class="row"><!-- UTILITY MENU START-->
+                            
+                    <div class="row hidden-sm hidden-xs"><!-- UTILITY MENU START-->
                         <div class="col-sm-12">
                             <ul class="nav" id="utility-nav">
                                 <li class="navbar-right"><?php get_search_form(); ?></li>
@@ -46,13 +46,14 @@
                     
                     <div class="row"><!-- PRIMARY MENU START -->
                         <div class="col-sm-12">
+                            <div class="collapse navbar-collapse" id="">   
                             <?php wp_nav_menu( array(
                                 'theme_location' => 'primary',
                                 'menu'            => 'menu',
                                 'container'       => 'container',
                                 'container_class' => 'container_class',
                                 'container_id'    => 'container_id',
-                                'menu_class'      => 'nav nav-justified',
+                                'menu_class'      => 'nav',
                                 'menu_id'         => 'primary',
                                 'echo'            => true,
                                 'fallback_cb'     => 'wp_page_menu',
@@ -64,10 +65,10 @@
                                 'depth'           => 0,
                                 'walker'          => ''
                             )); ?>
-                        </div>
-                    </div><!-- PRIMARY MENU END -->
-                    
+                        </div><!-- Collapse -->
+                    </div><!-- PRIMARY MENU END -->                    
                 </div>
+           
             </div>
         </div><!--HEADER RIGHT END-->
         </nav><!-- HEADER NAV END -->

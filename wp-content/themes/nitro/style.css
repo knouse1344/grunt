@@ -99,3 +99,7 @@ a img.aligncenter {
 #search-input {
     max-width:175px;
 }
+#header {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
