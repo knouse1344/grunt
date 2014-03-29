@@ -24,8 +24,8 @@
         <!-- HEADER NAVIGATION -->
         <nav class="navbar navbar-default navbar-static-top" role="navigation">
           <div class="container">
-            <div class="navbar-header"><!-- BRAND -->
-                <div class="col-md-4">
+            <div class="col-md-4">
+              <div class="navbar-header"><!-- BRAND -->            
               
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="">
                     <span class="sr-only">Toggle navigation</span>
