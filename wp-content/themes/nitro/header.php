@@ -46,9 +46,7 @@
                     
                     <div class="row"><!-- PRIMARY MENU START -->
                         <div class="col-sm-12">
-                            <p class="navbar-text navbar-right">
                             <?php wp_nav_menu( array(
-                            
                                 'theme_location' => 'primary',
                                 'menu'            => 'menu',
                                 'container'       => 'container',
@@ -65,9 +63,7 @@
                                 'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
                                 'depth'           => 0,
                                 'walker'          => ''
-                            
                             )); ?>
-                            </p>
                         </div>
                     </div><!-- PRIMARY MENU END -->
                     
