@@ -17,7 +17,7 @@
 <?php wp_head(); ?>
     
  </head>
-
+<body class="custom-background">
    <!-- Wrap all page content here -->
     <div id="wrap">
 

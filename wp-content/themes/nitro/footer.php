@@ -5,7 +5,7 @@
 		<div class="row">
             <div class="col-sm-12 col-xs-12">
                 
-                <img src="https://i.chzbgr.com/maxW500/2532544768/h4442634C/" class="img-responsive">
+                <p>Footer</p>
             
             </div>
         </div>

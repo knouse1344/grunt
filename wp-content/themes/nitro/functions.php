@@ -72,14 +72,15 @@
 #THEME-SUPPORTS
     #THUMBNAILS
     add_theme_support( 'post-thumbnails', array( 'post' ) );          // Posts only
-
-    #BACKGROUND-IMAGE
-    $args = array(
-        'default-color' => '000000',
-        'default-image' => get_template_directory_uri() . '/images/background.jpg', //@TODO: background
+    
+    #CUSTOM-HEADER
+    $headerargs = array(
+        'width'         => 980,
+        'height'        => 60,
+        'default-image' => get_template_directory_uri() . '/images/header.jpg',
+        'uploads'       => true,
     );
-    add_theme_support( 'custom-background', $args );
-
+    add_theme_support( 'custom-header', $headerargs );
 
 #SHORTCODES
     #@TODO: Locate and enable shortcodes
@@ -319,11 +320,9 @@ function cd_naw_meta_cb( $post ){
 #SAVE META BOX VALUES
     function cd_naw_meta_wbsave( $id ){
         if( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) return;
-         
-        if( !isset( $_POST['naw_nonce'] ) || !wp_verify_nonce( $_POST['naw_nonce'], 'save_naw_meta' ) ) return;
-         
+        if( !isset( $_POST['naw_nonce'] ) || !wp_verify_nonce( $_POST['naw_nonce'], 'save_naw_meta' ) ) return; 
         if( !current_user_can( 'edit_post' ) ) return;
-         
+
         $allowed = array(
             'p' => array()
         );
