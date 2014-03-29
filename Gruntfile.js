@@ -155,7 +155,7 @@ module.exports = function (grunt) {
     copy: {
       fonts: {
         expand: true,
-        src: 'bootstrap-dev/fonts/*',
+        src: 'fonts/*',
         dest: 'wp-content/themes/nitro/dist/'
       }
     },
