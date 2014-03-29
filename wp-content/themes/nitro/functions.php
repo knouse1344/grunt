@@ -151,6 +151,12 @@
     }
     add_filter('nav_menu_css_class' , 'primary_nav_class' , 10 , 2);
 
+    #ADD-CLASS-TO-MENU-LINK
+    function add_menuclass($ulclass) {
+    return preg_replace('/<a rel="dropdown-toggle"/', '<a class="dropdown-toggle"', $ulclass, 1);
+    }
+    add_filter('wp_nav_menu','add_menuclass');
+
     #PRIMARY-NAV-MENU
     register_nav_menu( 'primary', 'Primary Menu' );
 

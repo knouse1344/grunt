@@ -15,7 +15,7 @@
     <div id="wrap">
 
         
-        <nav class="navbar navbar-default navbar-static-top" role="navigation" id="header"><!-- HEADER NAV START -->
+        <nav class="navbar yamm navbar-default navbar-static-top" role="navigation" id="header"><!-- HEADER NAV START -->
           <div class="container">
               
             <div class="col-md-4"> <!-- HEADER LEFT START--> 
@@ -53,7 +53,7 @@
                                 'container'       => 'container',
                                 'container_class' => 'container_class',
                                 'container_id'    => 'container_id',
-                                'menu_class'      => 'nav',
+                                'menu_class'      => 'nav navbar-nav',
                                 'menu_id'         => 'primary',
                                 'echo'            => true,
                                 'fallback_cb'     => 'wp_page_menu',
