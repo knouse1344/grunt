@@ -3,3 +3,8 @@ Theme Name: Nitro
 Author: Duri Chitayat, Jiafu Chen, Jonathan Kleinman, Kuldeep Sighn
 Version: 1.0
 */
+
+/** Header **/
+.search-form {
+    margin-top: 10px;
+}

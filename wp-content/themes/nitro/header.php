@@ -46,13 +46,13 @@
                     
                     <div class="row"><!-- UTILITY MENU -->
                         <div class="col-sm-12">
-                            <p class="navbar-text navbar-right">
-                                <a href="#" class="navbar-link glyphicon glyphicon glyphicon-earphone">1-800-719-3307</a>
-                            </p>
-                            <p class="navbar-text navbar-right">
-                                <a href="#" class="navbar-link glyphicon glyphicon glyphicon-earphone">Remote Support</a>
-                            </p>
+                            
                             <?php get_search_form(); ?>
+                            
+                            <p class="navbar-text navbar-right"><a href="#" class="navbar-link glyphicon glyphicon glyphicon-earphone">Remote Support</a></p>
+                            
+                            <p class="navbar-text navbar-right"><a href="#" class="navbar-link glyphicon glyphicon glyphicon-earphone">1-800-719-3307</a></p>
+                            
                         </div>
                     </div>
                     
