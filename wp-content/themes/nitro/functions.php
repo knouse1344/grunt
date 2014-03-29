@@ -337,11 +337,7 @@ function cd_naw_meta_cb( $post ){
         if( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) return;
         if( !isset( $_POST['naw_nonce'] ) || !wp_verify_nonce( $_POST['naw_nonce'], 'save_naw_meta' ) ) return; 
         if( !current_user_can( 'edit_post' ) ) return;
-
-        $allowed = array(
-            'p' => array()
-        );
-         
+        $allowed = array( 'p' => array() );        
         if( isset( $_POST['_cd_naw_date'] ) )
             update_post_meta( $id, '_cd_naw_date', wp_kses( $_POST['_cd_naw_date'], $allowed ) );
         if( isset( $_POST['_cd_naw_start_time'] ) )
