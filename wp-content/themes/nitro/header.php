@@ -41,16 +41,25 @@
               </div>
             </div>
               
-            <div class="col-md-8">
+            <div class="col-sm-8">
                 <div class="collapse navbar-collapse" id="">
                     <div class="row">
                         <div class="col-sm-12">
-                        <p class="navbar-text navbar-right">Built by <a href="#" class="navbar-link">Net@Work Webteam</a></p>
+                            <p class="navbar-text navbar-right">
+                                <a href="#" class="navbar-link glyphicon glyphicon glyphicon-earphone">Contact Us</a>
+                            </p>
+                            <p class="navbar-text navbar-right">
+                                <a href="#" class="navbar-link glyphicon glyphicon glyphicon-earphone">Contact Us</a>
+                            </p>
+                            <p class="navbar-text navbar-right">
+                                <a href="#" class="navbar-link glyphicon glyphicon glyphicon-earphone">Contact Us</a>
+                            </p>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-sm-12">
-                        <p class="navbar-text navbar-right">Built by <a href="#" class="navbar-link">Net@Work Webteam</a></p>
+                        <p class="navbar-text navbar-right">
+                            Built by <a href="#" class="navbar-link">Net@Work Webteam</a></p>
                         </div>
                     </div>
                 </div>
