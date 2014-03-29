@@ -142,6 +142,15 @@
          }
          return $classes;
     }
+
+    #ADD-CLASS-TO-MENU-ITEM
+    add_filter('nav_menu_css_class' , 'primary_nav_class' , 10 , 2);
+    function special_nav_class($classes, $item){
+         if( in_array('page_item', $classes) ){
+            $classes[] = 'dropdown';
+         }
+         return $classes;
+    }
     
     
     #PRIMARY-NAV-MENU

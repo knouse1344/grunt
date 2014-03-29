@@ -67,7 +67,7 @@
         'container'       => 'container',
         'container_class' => 'container_class',
         'container_id'    => 'container_id',
-        'menu_class'      => 'navbar yamm navbar-default',
+        'menu_class'      => '',
         'menu_id'         => 'menu_id',
         'echo'            => true,
         'fallback_cb'     => 'wp_page_menu',
