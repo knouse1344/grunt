@@ -59,7 +59,7 @@
                     <div class="row"><!-- PRIMARY MENU -->
                         <div class="col-sm-12">
                             <p class="navbar-text navbar-right">
-                               <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+                               <?php wp_nav_menu( $primary-menu ); ?>
                             </p>
                         </div>
                     </div>
@@ -67,3 +67,24 @@
             </div>
           </div>
         </nav>
+        
+<?php
+    $primary-menu = array(
+        'theme_location' => 'primary',
+        'menu'            => 'menu',
+        'container'       => 'container',
+        'container_class' => 'container_class',
+        'container_id'    => 'container_id',
+        'menu_class'      => 'menu_class',
+        'menu_id'         => 'menu_id',
+        'echo'            => true,
+        'fallback_cb'     => 'wp_page_menu',
+        'before'          => 'before',
+        'after'           => 'after',
+        'link_before'     => 'link_before',
+        'link_after'      => 'link_after',
+        'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+        'depth'           => 0,
+        'walker'          => ''
+    );
+?>
