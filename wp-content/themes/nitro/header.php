@@ -43,7 +43,8 @@
               
             <div class="col-sm-8">
                 <div class="collapse navbar-collapse" id="">
-                    <div class="row">
+                    
+                    <div class="row"><!-- UTILITY MENU -->
                         <div class="col-sm-12">
                             <p class="navbar-text navbar-right">
                                 <a href="#" class="navbar-link glyphicon glyphicon glyphicon-earphone">1-800-719-3307</a>
@@ -54,10 +55,12 @@
                             <?php get_search_form(); ?>
                         </div>
                     </div>
-                    <div class="row">
+                    
+                    <div class="row"><!-- PRIMARY MENU -->
                         <div class="col-sm-12">
-                        <p class="navbar-text navbar-right">
-                            Built by <a href="#" class="navbar-link">Net@Work Webteam</a></p>
+                            <p class="navbar-text navbar-right">
+                               <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+                            </p>
                         </div>
                     </div>
                 </div>
