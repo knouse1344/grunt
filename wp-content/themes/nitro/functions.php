@@ -153,7 +153,7 @@
 
     #ADD-CLASS-TO-MENU-LINK
     function add_menuclass($ulclass) {
-    return preg_replace('/<a rel="dropdown-toggle"/', '<a class="dropdown-toggle"', $ulclass, 1);
+    return preg_replace('/<a rel="dropdown-toggle"/', '<a class="dropdown-toggle"', $ulclass, -1);
     }
     add_filter('wp_nav_menu','add_menuclass');
 
