@@ -50,10 +50,6 @@ module.exports = function (grunt) {
     },
 
     concat: {
-      options: {
-        banner: 'Banner',
-        stripBanners: true
-      },
       bootstrap: {
         src: [
           'bootstrap-dev/js/transition.js',
