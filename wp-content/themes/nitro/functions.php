@@ -154,13 +154,17 @@
     register_sidebar(array(
         'name'=> 'Resources',
 		'id' => 'resources',
+        'before_widget' => '',
+		'after_widget' => '',
     ));
 
     #REGISTER-PRODUCTS&SERVICES-WIDGET
     if ( function_exists('register_sidebar') )
     register_sidebar(array(
-        'name'=> 'Products & Services',
+        'name'=> 'Solutions',
 		'id' => 'solutions',
+        'before_widget' => '',
+		'after_widget' => '',
     ));
 
 

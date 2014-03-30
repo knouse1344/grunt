@@ -54,12 +54,7 @@
                                         <li class="dropdown yamm-fw navbar-right"><a href="#">SUPPORT</a></li>
                                         
                                         <!-- 3 --> 
-                                        <li class="dropdown yamm-fw navbar-right">
-                                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">COMPANY</a>
-                                            <ul role="menu" class="dropdown-menu">
-                                              <li><a>Webinars</a></li>
-                                            </ul>
-                                        </li>
+                                        <li class="dropdown yamm-fw navbar-right"><a href="#">COMPANY</a></li>
                                         
                                         <!-- 2 -->                                       
                                         <li class="dropdown navbar-right">
@@ -75,11 +70,12 @@
                                                         'items_wrap'      => '<ul class="list-unstyled">%3$s</ul>',
                                                         'depth'           => 1,
                                                         'walker'          => ''
-                                                    )); ?></div>
-                                                  <div class="col-sm-6"><?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Resources')) : ?>[ Resources: Promotional Widget Area ]<?php endif; ?></div>
+                                                    )); ?>
+                                                    </div>
+                                                    <div class="col-sm-6"><?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Resources')) : ?>[ Resources: Promotional Widget Area ]<?php endif; ?></div>
                                                 </div>
                                               </li>
-                                            </ul>
+                                            
                                         </li>
                                         
                                         <!-- 1 --> 
