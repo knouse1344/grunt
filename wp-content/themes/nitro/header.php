@@ -76,7 +76,7 @@
                                                         'depth'           => 1,
                                                         'walker'          => ''
                                                     )); ?></div>
-                                                  <div class="col-sm-6"><?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('resources')) : ?>[ Resources: Promotional Widget Area ]<?php endif; ?></div>
+                                                  <div class="col-sm-6"><?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Resources')) : ?>[ Resources: Promotional Widget Area ]<?php endif; ?></div>
                                                 </div>
                                               </li>
                                             </ul>
@@ -108,7 +108,7 @@
                                                         'walker'          => ''
                                                     )); ?></div>
                                                   <div class="col-sm-4">
-                                                      <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('solutions')) : ?>
+                                                      <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Solutions')) : ?>
                                                         [ Services: Promotional Widget Area ]
                                                         <?php endif; ?> 
                                                   </div>
