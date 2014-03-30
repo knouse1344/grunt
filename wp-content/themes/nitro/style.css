@@ -121,6 +121,9 @@ margin-top: 10px;
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
     background-color:transparent;
 }
+#primary > li.dropdown.yamm-fw.navbar-right.open > a {
+    background-color: transparent;
+}
 
 
 /* =Global
