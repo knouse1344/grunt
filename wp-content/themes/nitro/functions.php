@@ -107,13 +107,10 @@
     add_filter('nav_menu_css_class' , 'special_nav_class' , 10 , 2);
 
     #ADD-CLASS-TO-MENU-ITEM
-    function menu_list_unstyled($classes, $item){
-         if( in_array('menu', $classes) ){
-            $classes[] = 'list-unstyled ';
-         }
-         return $classes;
-    }
-    add_filter('nav_menu_css_class' , 'menu_list_unstyled' , 10 , 2);
+    function menu_list_unstyled($ulclass) {
+    return preg_replace('class="menu"', 'class="menu list-unstyled"', $ulclass);
+      }
+    add_filter('wp_nav_menu','menu_list_unstyled');
 
 
     #PRIMARY-NAV-MENU
