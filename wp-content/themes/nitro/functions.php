@@ -145,14 +145,24 @@
     add_filter('nav_menu_css_class' , 'special_nav_class' , 10 , 2);
 
     #PRIMARY-NAV-MENU
-    register_nav_menu( 'primary', 'Primary Menu' );
+    register_nav_menu( 'resources', 'Resources Menu' );
+    register_nav_menu( 'services', 'Products Menu' );
+    register_nav_menu( 'products', 'Products Menu' );
 
-    #REGISTER-WIDGET
+    #REGISTER-RESOURCES-WIDGET
     if ( function_exists('register_sidebar') )
     register_sidebar(array(
         'name'=> 'Resources',
 		'id' => 'resources',
     ));
+
+    #REGISTER-PRODUCTS&SERVICES-WIDGET
+    if ( function_exists('register_sidebar') )
+    register_sidebar(array(
+        'name'=> 'Products & Services',
+		'id' => 'products-and-services',
+    ));
+
 
 
 #BREADCRUMBS

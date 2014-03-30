@@ -108,7 +108,7 @@
                                                         'walker'          => ''
                                                     )); ?></div>
                                                   <div class="col-sm-4">
-                                                      <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Services')) : ?>
+                                                      <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Products & Services')) : ?>
                                                         [ Services: Promotional Widget Area ]
                                                         <?php endif; ?> 
                                                   </div>
