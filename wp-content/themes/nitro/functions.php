@@ -108,7 +108,7 @@
 
     #ADD-CLASS-TO-MENU-ITEM
     function menu_list_unstyled($ulclass) {
-    return preg_replace('class="menu"', 'class="menu list-unstyled"', $ulclass);
+    return preg_replace('/class="menu"/', 'class="menu list-unstyled"', $ulclass);
       }
     add_filter('wp_nav_menu','menu_list_unstyled');
 
