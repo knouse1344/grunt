@@ -51,12 +51,39 @@
                                     <ul class="nav navbar-nav navbar-right" id="primary">
                                         
                                         <!-- 4 --> 
-                                       <li class="dropdown yamm-fw navbar-right">
-                                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">SUPPORT</a>
+                                        <li class="dropdown yamm-fw navbar-right"><a href="#">SUPPORT</a></li>
+                                        
+                                        <!-- 3 --> 
+                                        <li class="dropdown yamm-fw navbar-right">
+                                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">COMPANY</a>
+                                            <ul role="menu" class="dropdown-menu">
+                                              <li><a>Webinars</a></li>
+                                            </ul>
+                                        </li>
+                                        
+                                        <!-- 2 -->                                       
+                                        <li class="dropdown yamm-fw navbar-right">
+                                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">LEARNING CENTER<b class="caret"></b></a>
                                             <ul class="dropdown-menu">
                                               <li class="yamm-content">
                                                 <div class="row">
-                                                  <div class="col-sm-4"><?php wp_nav_menu( array(
+                                                  <div class="col-sm-4">PUT A MENU HERE</div>
+                                                  <div class="col-sm-4">ANOTHER MENU HERE</div>
+                                                  <div class="col-sm-4">ANuTER MENU HERE</div>
+                                                </div>
+                                              </li>
+                                            </ul>
+                                        </li>
+                                        
+                                        <!-- 1 --> 
+                                        <li class="dropdown yamm-fw navbar-right">
+                                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">SOLUTIONS & SERVICES<b class="caret"></b></a>
+                                            <ul class="dropdown-menu">
+                                              <li class="yamm-content">
+                                                <div class="row">
+                                                  <div class="col-sm-4">
+                                                      <h4>Title One</h4>
+                                                      <?php wp_nav_menu( array(
                                                         'theme_location' => 'primary',
                                                         'menu'            => 'menu',
                                                         'container'       => 'container',
@@ -74,50 +101,44 @@
                                                         'depth'           => 0,
                                                         'walker'          => ''
                                                     )); ?></div>
-                                                  <div class="col-sm-4">ANOTHER MENU HERE</div>
-                                                  <div class="col-sm-4">ANuTER MENU HERE</div>
-                                                </div>
-                                              </li>
-                                            </ul>
-                                        </li>
-                                        
-                                        <!-- 3 --> 
-                                        <li class="dropdown yamm-fw navbar-right">
-                                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">COMPANY</a>
-                                            <ul class="dropdown-menu">
-                                              <li class="yamm-content">
-                                                <div class="row">
-                                                  <div class="col-sm-4">PUT A MENU HERE</div>
-                                                  <div class="col-sm-4">ANOTHER MENU HERE</div>
-                                                  <div class="col-sm-4">ANuTER MENU HERE</div>
-                                                </div>
-                                              </li>
-                                            </ul>
-                                        </li>
-                                        
-                                        <!-- 2 -->                                       
-                                        <li class="dropdown yamm-fw navbar-right">
-                                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">LEARNING CENTER</a>
-                                            <ul class="dropdown-menu">
-                                              <li class="yamm-content">
-                                                <div class="row">
-                                                  <div class="col-sm-4">PUT A MENU HERE</div>
-                                                  <div class="col-sm-4">ANOTHER MENU HERE</div>
-                                                  <div class="col-sm-4">ANuTER MENU HERE</div>
-                                                </div>
-                                              </li>
-                                            </ul>
-                                        </li>
-                                        
-                                        <!-- 1 --> 
-                                        <li class="dropdown yamm-fw navbar-right">
-                                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">SOLUTIONS & SERVICES</a>
-                                            <ul class="dropdown-menu">
-                                              <li class="yamm-content">
-                                                <div class="row">
-                                                  <div class="col-sm-4">PUT A MENU HERE</div>
-                                                  <div class="col-sm-4">ANOTHER MENU HERE</div>
-                                                  <div class="col-sm-4">ANuTER MENU HERE</div>
+                                                  <div class="col-sm-4"><h4>Title Two</h4>
+                                                      <?php wp_nav_menu( array(
+                                                        'theme_location' => 'primary',
+                                                        'menu'            => 'menu',
+                                                        'container'       => 'container',
+                                                        'container_class' => 'container_class',
+                                                        'container_id'    => 'container_id',
+                                                        'menu_class'      => 'menu_class',
+                                                        'menu_id'         => 'menu_id',
+                                                        'echo'            => true,
+                                                        'fallback_cb'     => 'wp_page_menu',
+                                                        //'before'          => '',
+                                                        //'after'           => '',
+                                                        //'link_before'     => '',
+                                                        //'link_after'      => '',
+                                                        'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+                                                        'depth'           => 0,
+                                                        'walker'          => ''
+                                                    )); ?></div>
+                                                  <div class="col-sm-4"><h4>Title Three</h4>
+                                                      <?php wp_nav_menu( array(
+                                                        'theme_location' => 'primary',
+                                                        'menu'            => 'menu',
+                                                        'container'       => 'container',
+                                                        'container_class' => 'container_class',
+                                                        'container_id'    => 'container_id',
+                                                        'menu_class'      => 'menu_class',
+                                                        'menu_id'         => 'menu_id',
+                                                        'echo'            => true,
+                                                        'fallback_cb'     => 'wp_page_menu',
+                                                        //'before'          => '',
+                                                        //'after'           => '',
+                                                        //'link_before'     => '',
+                                                        //'link_after'      => '',
+                                                        'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+                                                        'depth'           => 0,
+                                                        'walker'          => ''
+                                                    )); ?></div>
                                                 </div>
                                               </li>
                                             </ul>
