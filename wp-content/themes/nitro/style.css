@@ -115,13 +115,13 @@ a img.aligncenter {
     border-radius: 0;
     border: none;
 }
-.yamm .dropdown.yamm-fw .dropdown-menu {
-margin-top: 10px;
+.yamm .dropdown .dropdown-menu {
+    margin-top: 10px;
 }
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
     background-color:transparent;
 }
-#primary > li.dropdown.yamm-fw.navbar-right.open > a {
+#primary > li.dropdown.navbar-right.open > a {
     background-color: transparent;
 }
 
