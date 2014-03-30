@@ -62,14 +62,23 @@
                                         </li>
                                         
                                         <!-- 2 -->                                       
-                                        <li class="dropdown yamm-fw navbar-right">
+                                        <li class="dropdown navbar-right">
                                         <a href="#" data-toggle="dropdown" class="dropdown-toggle">LEARNING CENTER<b class="caret"></b></a>
                                             <ul class="dropdown-menu">
                                               <li class="yamm-content">
                                                 <div class="row">
-                                                  <div class="col-sm-4">PUT A MENU HERE</div>
-                                                  <div class="col-sm-4">ANOTHER MENU HERE</div>
-                                                  <div class="col-sm-4">ANuTER MENU HERE</div>
+                                                  <div class="col-sm-6">
+                                                      <?php wp_nav_menu( array(
+                                                        'theme_location' => 'resources',
+                                                        'menu'            => 'menu',
+                                                        'menu_class'      => 'list-unstyled',
+                                                        'echo'            => true,
+                                                        'fallback_cb'     => 'wp_page_menu',
+                                                        'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+                                                        'depth'           => 1,
+                                                        'walker'          => ''
+                                                    )); ?></div>
+                                                  <div class="col-sm-6"><?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Services')) : ?>[ Resources: Promotional Widget Area ]<?php endif; ?></div>
                                                 </div>
                                               </li>
                                             </ul>
@@ -84,7 +93,7 @@
                                                   <div class="col-sm-4">
                                                       <h4>Services</h4>
                                                       <?php wp_nav_menu( array(
-                                                        'theme_location' => 'primary',
+                                                        'theme_location' => 'services',
                                                         'menu'            => 'menu',
                                                         'menu_class'      => 'list-unstyled',
                                                         'echo'            => true,
@@ -95,7 +104,7 @@
                                                     )); ?></div>
                                                   <div class="col-sm-4"><h4>Products</h4>
                                                       <?php wp_nav_menu( array(
-                                                        'theme_location' => 'primary',
+                                                        'theme_location' => 'products',
                                                         'menu'            => 'menu',
                                                         'container'       => 'container',
                                                         'container_class' => 'container_class',
@@ -108,8 +117,8 @@
                                                         'walker'          => ''
                                                     )); ?></div>
                                                   <div class="col-sm-4">
-                                                      <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Resources')) : ?>
-                                                        [ do default stuff if no widgets ]
+                                                      <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Services')) : ?>
+                                                        [ Services: Promotional Widget Area ]
                                                         <?php endif; ?> 
                                                   </div>
                                                 </div>
