@@ -63,7 +63,7 @@
                                         
                                         <!-- 2 -->                                       
                                         <li class="dropdown navbar-right">
-                                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">LEARNING CENTER<b class="caret"></b></a>
+                                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">LEARNING CENTER <b class="caret"></b></a>
                                             <ul class="dropdown-menu">
                                               <li class="yamm-content">
                                                 <div class="row">
@@ -76,7 +76,7 @@
                                                         'depth'           => 1,
                                                         'walker'          => ''
                                                     )); ?></div>
-                                                  <div class="col-sm-6"><?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Services')) : ?>[ Resources: Promotional Widget Area ]<?php endif; ?></div>
+                                                  <div class="col-sm-6"><?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('resources')) : ?>[ Resources: Promotional Widget Area ]<?php endif; ?></div>
                                                 </div>
                                               </li>
                                             </ul>
@@ -84,7 +84,7 @@
                                         
                                         <!-- 1 --> 
                                         <li class="dropdown yamm-fw navbar-right">
-                                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">SOLUTIONS & SERVICES<b class="caret"></b></a>
+                                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">SOLUTIONS & SERVICES <b class="caret"></b></a>
                                             <ul class="dropdown-menu">
                                               <li class="yamm-content">
                                                 <div class="row">
@@ -108,7 +108,7 @@
                                                         'walker'          => ''
                                                     )); ?></div>
                                                   <div class="col-sm-4">
-                                                      <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('products-and-services')) : ?>
+                                                      <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('solutions')) : ?>
                                                         [ Services: Promotional Widget Area ]
                                                         <?php endif; ?> 
                                                   </div>

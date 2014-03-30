@@ -160,7 +160,7 @@
     if ( function_exists('register_sidebar') )
     register_sidebar(array(
         'name'=> 'Products & Services',
-		'id' => 'products-and-services',
+		'id' => 'solutions',
     ));
 
 
