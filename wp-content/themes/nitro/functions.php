@@ -134,32 +134,32 @@
         'id' => 'footer1',
         'before_widget' => '<aside id="%1$s" class="widget %2$s">',
         'after_widget' => '</aside>',
-        'before_title' => '<h3 class="widget-title">',
-        'after_title' => '</h3>',
+        'before_title' => '<h4 class="widget-title">',
+        'after_title' => '</h4>',
     ) );
     register_sidebar( array(
         'name' => __( 'Footer 2', 'wpb' ),
         'id' => 'footer2',
         'before_widget' => '<aside id="%1$s" class="widget %2$s">',
         'after_widget' => '</aside>',
-        'before_title' => '<h3 class="widget-title">',
-        'after_title' => '</h3>',
+        'before_title' => '<h4 class="widget-title">',
+        'after_title' => '</h4>',
     ) );
     register_sidebar( array(
         'name' => __( 'Footer 3', 'wpb' ),
         'id' => 'footer3',
         'before_widget' => '<aside id="%1$s" class="widget %2$s">',
         'after_widget' => '</aside>',
-        'before_title' => '<h3 class="widget-title">',
-        'after_title' => '</h3>',
+        'before_title' => '<h4 class="widget-title">',
+        'after_title' => '</h4>',
     ) );
     register_sidebar( array(
         'name' => __( 'Footer 4', 'wpb' ),
         'id' => 'footer4',
         'before_widget' => '<aside id="%1$s" class="widget %2$s">',
         'after_widget' => '</aside>',
-        'before_title' => '<h3 class="widget-title">',
-        'after_title' => '</h3>',
+        'before_title' => '<h4 class="widget-title">',
+        'after_title' => '</h4>',
     ) );
 
 
