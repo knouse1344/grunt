@@ -82,7 +82,18 @@
                                               <li class="yamm-content">
                                                 <div class="row">
                                                   <div class="col-sm-4">
-                                                      <h4>Title One</h4>
+                                                      <h4>Services</h4>
+                                                      <?php wp_nav_menu( array(
+                                                        'theme_location' => 'primary',
+                                                        'menu'            => 'menu',
+                                                        'menu_class'      => 'list-unstyled',
+                                                        'echo'            => true,
+                                                        'fallback_cb'     => 'wp_page_menu',
+                                                        'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+                                                        'depth'           => 1,
+                                                        'walker'          => ''
+                                                    )); ?></div>
+                                                  <div class="col-sm-4"><h4>Products</h4>
                                                       <?php wp_nav_menu( array(
                                                         'theme_location' => 'primary',
                                                         'menu'            => 'menu',
@@ -92,50 +103,15 @@
                                                         'menu_class'      => 'list-unstyled',
                                                         'echo'            => true,
                                                         'fallback_cb'     => 'wp_page_menu',
-                                                        //'before'          => '',
-                                                        //'after'           => '',
-                                                        //'link_before'     => '',
-                                                        //'link_after'      => '',
                                                         'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
-                                                        'depth'           => 0,
+                                                        'depth'           => 1,
                                                         'walker'          => ''
                                                     )); ?></div>
-                                                  <div class="col-sm-4"><h4>Title Two</h4>
-                                                      <?php wp_nav_menu( array(
-                                                        'theme_location' => 'primary',
-                                                        'menu'            => 'menu',
-                                                        'container'       => 'container',
-                                                        'container_class' => 'container_class',
-                                                        'container_id'    => 'container_id',
-                                                        'menu_class'      => 'list-unstyled',
-                                                        'echo'            => true,
-                                                        'fallback_cb'     => 'wp_page_menu',
-                                                        //'before'          => '',
-                                                        //'after'           => '',
-                                                        //'link_before'     => '',
-                                                        //'link_after'      => '',
-                                                        'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
-                                                        'depth'           => 0,
-                                                        'walker'          => ''
-                                                    )); ?></div>
-                                                  <div class="col-sm-4"><h4>Title Three</h4>
-                                                      <?php wp_nav_menu( array(
-                                                        'theme_location' => 'primary',
-                                                        'menu'            => 'menu',
-                                                        'container'       => 'container',
-                                                        'container_class' => 'container_class',
-                                                        'container_id'    => 'container_id',
-                                                        'menu_class'      => 'list-unstyled',
-                                                        'echo'            => true,
-                                                        'fallback_cb'     => 'wp_page_menu',
-                                                        //'before'          => '',
-                                                        //'after'           => '',
-                                                        //'link_before'     => '',
-                                                        //'link_after'      => '',
-                                                        'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
-                                                        'depth'           => 0,
-                                                        'walker'          => ''
-                                                    )); ?></div>
+                                                  <div class="col-sm-4">
+                                                      <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Resources')) : ?>
+                                                        [ do default stuff if no widgets ]
+                                                        <?php endif; ?> 
+                                                  </div>
                                                 </div>
                                               </li>
                                             </ul>

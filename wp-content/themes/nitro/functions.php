@@ -144,21 +144,15 @@
     }
     add_filter('nav_menu_css_class' , 'special_nav_class' , 10 , 2);
 
-    #ADD-CLASS-TO-MENU-ITEM   
-    #function primary_nav_class($classes, $item){
-    #    $classes['page_item'] = 'dropdown navbar-right';
-    #     return $classes;
-    #}
-    #add_filter('nav_menu_css_class' , 'primary_nav_class' , 10 , 2);
-
-    #ADD-CLASS-TO-MENU-LINK
-    #function add_menuclass($ulclass) {
-    #return preg_replace('/<a rel="dropdown-toggle"/', '<a class="dropdown-toggle"', $ulclass);
-    #}
-    #add_filter('wp_nav_menu','add_menuclass');
-
     #PRIMARY-NAV-MENU
     register_nav_menu( 'primary', 'Primary Menu' );
+
+    #REGISTER-WIDGET
+    if ( function_exists('register_sidebar') )
+    register_sidebar(array(
+        'name'=> 'Resources',
+		'id' => 'resources',
+    ));
 
 
 #BREADCRUMBS
