@@ -78,9 +78,6 @@ module.exports = function (grunt) {
         report: 'min'
       },
       bootstrap: {
-        options: {
-          banner: 'Banner'
-        },
         src: '<%= concat.bootstrap.dest %>',
         dest: 'wp-content/themes/nitro/dist/js/bootstrap.min.js' //replaced package with bootstrap, all projects will use same file name
       }
