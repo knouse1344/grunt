@@ -106,6 +106,16 @@
     }
     add_filter('nav_menu_css_class' , 'special_nav_class' , 10 , 2);
 
+    #ADD-CLASS-TO-MENU-ITEM
+    function menu_list_unstyled($classes, $item){
+         if( in_array('menu', $classes) ){
+            $classes[] = 'list-unstyled ';
+         }
+         return $classes;
+    }
+    add_filter('nav_menu_css_class' , 'menu_list_unstyled' , 10 , 2);
+
+
     #PRIMARY-NAV-MENU
     register_nav_menu( 'resources', 'Resources Menu' );
     register_nav_menu( 'services', 'Products Menu' );

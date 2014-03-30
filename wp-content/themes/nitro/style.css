@@ -126,6 +126,16 @@ a img.aligncenter {
 }
 
 
+/* =Footer
+-------------------------------------------------------------- */
+#footer {
+    background-color: #6E6E6E;
+    color: #F2F2F2;
+    min-height: 400px;
+    border-top: 1px solid #DBDBDB;
+}
+
+
 /* =Global
 -------------------------------------------------------------- */
 body {
