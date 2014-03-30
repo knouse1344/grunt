@@ -49,54 +49,58 @@
                             <div class="collapse navbar-collapse" id="">
                                 
                                     <ul class="nav navbar-nav">
-                                        
-                                        
-                                        <li class="dropdown yamm-fw"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Grid<b class="caret"></b></a>
+                    
+                                        <li class="dropdown yamm-fw navbar-right">
+                                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">SOLUTIONS & SERVICES</a>
                                             <ul class="dropdown-menu">
-                                              <li class="grid-demo">
+                                              <li class="yamm-content">
                                                 <div class="row">
-                                                  <div class="col-sm-12">.col-sm-12</div>
-                                                </div>
-                                                <div class="row">
-                                                  <div class="col-sm-6">.col-sm-6</div>
-                                                  <div class="col-sm-6">.col-sm-6</div>
-                                                </div>
-                                                <div class="row">
-                                                  <div class="col-sm-4">.col-sm-4</div>
-                                                  <div class="col-sm-4">.col-sm-4</div>
-                                                  <div class="col-sm-4">.col-sm-4</div>
-                                                </div>
-                                                <div class="row">
-                                                  <div class="col-sm-3">.col-sm-3</div>
-                                                  <div class="col-sm-3">.col-sm-3</div>
-                                                  <div class="col-sm-3">.col-sm-3</div>
-                                                  <div class="col-sm-3">.col-sm-3</div>
-                                                </div>
-                                                <div class="row">
-                                                  <div class="col-sm-2">.col-sm-2</div>
-                                                  <div class="col-sm-2">.col-sm-2</div>
-                                                  <div class="col-sm-2">.col-sm-2</div>
-                                                  <div class="col-sm-2">.col-sm-2</div>
-                                                  <div class="col-sm-2">.col-sm-2</div>
-                                                  <div class="col-sm-2">.col-sm-2</div>
-                                                </div>
-                                                <div class="row">
-                                                  <div class="col-sm-1">.col-sm-1</div>
-                                                  <div class="col-sm-1">.col-sm-1</div>
-                                                  <div class="col-sm-1">.col-sm-1</div>
-                                                  <div class="col-sm-1">.col-sm-1</div>
-                                                  <div class="col-sm-1">.col-sm-1</div>
-                                                  <div class="col-sm-1">.col-sm-1</div>
-                                                  <div class="col-sm-1">.col-sm-1</div>
-                                                  <div class="col-sm-1">.col-sm-1</div>
-                                                  <div class="col-sm-1">.col-sm-1</div>
-                                                  <div class="col-sm-1">.col-sm-1</div>
-                                                  <div class="col-sm-1">.col-sm-1</div>
-                                                  <div class="col-sm-1">.col-sm-1</div>
+                                                  <div class="col-sm-4">PUT A MENU HERE</div>
+                                                  <div class="col-sm-4">ANOTHER MENU HERE</div>
+                                                  <div class="col-sm-4">ANuTER MENU HERE</div>
                                                 </div>
                                               </li>
                                             </ul>
-                                          </li>
+                                        </li>
+                                        
+                                        <li class="dropdown yamm-fw navbar-right">
+                                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">LEARNING CENTER</a>
+                                            <ul class="dropdown-menu">
+                                              <li class="yamm-content">
+                                                <div class="row">
+                                                  <div class="col-sm-4">PUT A MENU HERE</div>
+                                                  <div class="col-sm-4">ANOTHER MENU HERE</div>
+                                                  <div class="col-sm-4">ANuTER MENU HERE</div>
+                                                </div>
+                                              </li>
+                                            </ul>
+                                        </li>
+                                       
+                                        <li class="dropdown yamm-fw navbar-right">
+                                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">COMPANY</a>
+                                            <ul class="dropdown-menu">
+                                              <li class="yamm-content">
+                                                <div class="row">
+                                                  <div class="col-sm-4">PUT A MENU HERE</div>
+                                                  <div class="col-sm-4">ANOTHER MENU HERE</div>
+                                                  <div class="col-sm-4">ANuTER MENU HERE</div>
+                                                </div>
+                                              </li>
+                                            </ul>
+                                        </li>
+                                        
+                                       <li class="dropdown yamm-fw navbar-right">
+                                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">SUPPORT</a>
+                                            <ul class="dropdown-menu">
+                                              <li class="yamm-content">
+                                                <div class="row">
+                                                  <div class="col-sm-4">PUT A MENU HERE</div>
+                                                  <div class="col-sm-4">ANOTHER MENU HERE</div>
+                                                  <div class="col-sm-4">ANuTER MENU HERE</div>
+                                                </div>
+                                              </li>
+                                            </ul>
+                                        </li>
                                     </ul>                                
   
                         </div><!-- Collapse -->
