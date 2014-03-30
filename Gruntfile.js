@@ -52,7 +52,7 @@ module.exports = function (grunt) {
     concat: {
       options: {
         banner: 'Banner',
-        stripBanners: false
+        stripBanners: true
       },
       bootstrap: {
         src: [
@@ -127,7 +127,7 @@ module.exports = function (grunt) {
       dist: {
         options: {
           position: 'top',
-          banner: '<%= banner %>'
+          banner: 'banner'
         },
         files: {
           src: [
