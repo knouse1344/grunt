@@ -49,36 +49,55 @@
                             <div class="collapse navbar-collapse" id="">
                                 
                                     <ul class="nav navbar-nav">
-                                    <li class="dropdown">
-                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">SOLUTIONS & SERVICES</a>
-                                        <ul class="dropdown-menu">
-                                            <li>
-                                                <div class="yamm-content">
-                                                <div class="row"> 
-                                                    <?php wp_nav_menu( array(
-                                                        'theme_location' => 'primary',
-                                                        'menu'            => 'menu',
-                                                        'container'       => 'container',
-                                                        'container_class' => 'container_class',
-                                                        'container_id'    => 'container_id',
-                                                        'menu_class'      => 'nav navbar-nav',
-                                                        'menu_id'         => 'primary',
-                                                        'echo'            => true,
-                                                        'fallback_cb'     => 'wp_page_menu',
-                                                        //'before'          => '',
-                                                        //'after'           => '',
-                                                        //'link_before'     => '',
-                                                        //'link_after'      => '',
-                                                        'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
-                                                        'depth'           => 0,
-                                                        'walker'          => ''
-                                                    )); ?>
+                                        
+                                        
+                                        <li class="dropdown yamm-fw"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Grid<b class="caret"></b></a>
+                                            <ul class="dropdown-menu">
+                                              <li class="grid-demo">
+                                                <div class="row">
+                                                  <div class="col-sm-12">.col-sm-12</div>
                                                 </div>
+                                                <div class="row">
+                                                  <div class="col-sm-6">.col-sm-6</div>
+                                                  <div class="col-sm-6">.col-sm-6</div>
                                                 </div>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    </ul>
+                                                <div class="row">
+                                                  <div class="col-sm-4">.col-sm-4</div>
+                                                  <div class="col-sm-4">.col-sm-4</div>
+                                                  <div class="col-sm-4">.col-sm-4</div>
+                                                </div>
+                                                <div class="row">
+                                                  <div class="col-sm-3">.col-sm-3</div>
+                                                  <div class="col-sm-3">.col-sm-3</div>
+                                                  <div class="col-sm-3">.col-sm-3</div>
+                                                  <div class="col-sm-3">.col-sm-3</div>
+                                                </div>
+                                                <div class="row">
+                                                  <div class="col-sm-2">.col-sm-2</div>
+                                                  <div class="col-sm-2">.col-sm-2</div>
+                                                  <div class="col-sm-2">.col-sm-2</div>
+                                                  <div class="col-sm-2">.col-sm-2</div>
+                                                  <div class="col-sm-2">.col-sm-2</div>
+                                                  <div class="col-sm-2">.col-sm-2</div>
+                                                </div>
+                                                <div class="row">
+                                                  <div class="col-sm-1">.col-sm-1</div>
+                                                  <div class="col-sm-1">.col-sm-1</div>
+                                                  <div class="col-sm-1">.col-sm-1</div>
+                                                  <div class="col-sm-1">.col-sm-1</div>
+                                                  <div class="col-sm-1">.col-sm-1</div>
+                                                  <div class="col-sm-1">.col-sm-1</div>
+                                                  <div class="col-sm-1">.col-sm-1</div>
+                                                  <div class="col-sm-1">.col-sm-1</div>
+                                                  <div class="col-sm-1">.col-sm-1</div>
+                                                  <div class="col-sm-1">.col-sm-1</div>
+                                                  <div class="col-sm-1">.col-sm-1</div>
+                                                  <div class="col-sm-1">.col-sm-1</div>
+                                                </div>
+                                              </li>
+                                            </ul>
+                                          </li>
+                                    </ul>                                
   
                         </div><!-- Collapse -->
                     </div><!-- PRIMARY MENU END -->                    
