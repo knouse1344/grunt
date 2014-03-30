@@ -18,7 +18,7 @@
         <nav class="navbar yamm navbar-default navbar-static-top" role="navigation" id="header"><!-- HEADER NAV START -->
           <div class="container">
               
-            <div class="col-md-4"> <!-- HEADER LEFT START--> 
+            <div class="col-sm-3"> <!-- HEADER LEFT START--> 
               <div class="navbar-header">                        
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="">
                     <span class="sr-only">Toggle navigation</span>
@@ -32,7 +32,7 @@
               </div>
             </div><!-- HEADER LEFT END--> 
               
-            <div class="col-sm-8"><!--HEADER RIGHT START-->
+            <div class="col-sm-9"><!--HEADER RIGHT START-->
                             
                     <div class="row hidden-sm hidden-xs"><!-- UTILITY MENU START-->
                         <div class="col-sm-12">
@@ -48,10 +48,11 @@
                         <div class="col-sm-12">
                             <div class="collapse navbar-collapse" id="">
                                 
-                                    <ul class="nav navbar-nav">
-                    
-                                        <li class="dropdown yamm-fw navbar-right">
-                                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">SOLUTIONS & SERVICES</a>
+                                    <ul class="nav navbar-nav navbar-right" id="primary">
+                                        
+                                        <!-- 4 --> 
+                                       <li class="dropdown yamm-fw navbar-right">
+                                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">SUPPORT</a>
                                             <ul class="dropdown-menu">
                                               <li class="yamm-content">
                                                 <div class="row">
@@ -63,19 +64,7 @@
                                             </ul>
                                         </li>
                                         
-                                        <li class="dropdown yamm-fw navbar-right">
-                                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">LEARNING CENTER</a>
-                                            <ul class="dropdown-menu">
-                                              <li class="yamm-content">
-                                                <div class="row">
-                                                  <div class="col-sm-4">PUT A MENU HERE</div>
-                                                  <div class="col-sm-4">ANOTHER MENU HERE</div>
-                                                  <div class="col-sm-4">ANuTER MENU HERE</div>
-                                                </div>
-                                              </li>
-                                            </ul>
-                                        </li>
-                                       
+                                        <!-- 3 --> 
                                         <li class="dropdown yamm-fw navbar-right">
                                         <a href="#" data-toggle="dropdown" class="dropdown-toggle">COMPANY</a>
                                             <ul class="dropdown-menu">
@@ -89,8 +78,9 @@
                                             </ul>
                                         </li>
                                         
-                                       <li class="dropdown yamm-fw navbar-right">
-                                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">SUPPORT</a>
+                                        <!-- 2 -->                                       
+                                        <li class="dropdown yamm-fw navbar-right">
+                                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">LEARNING CENTER</a>
                                             <ul class="dropdown-menu">
                                               <li class="yamm-content">
                                                 <div class="row">
@@ -101,6 +91,21 @@
                                               </li>
                                             </ul>
                                         </li>
+                                        
+                                        <!-- 1 --> 
+                                        <li class="dropdown yamm-fw navbar-right">
+                                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">SOLUTIONS & SERVICES</a>
+                                            <ul class="dropdown-menu">
+                                              <li class="yamm-content">
+                                                <div class="row">
+                                                  <div class="col-sm-4">PUT A MENU HERE</div>
+                                                  <div class="col-sm-4">ANOTHER MENU HERE</div>
+                                                  <div class="col-sm-4">ANuTER MENU HERE</div>
+                                                </div>
+                                              </li>
+                                            </ul>
+                                        </li>
+
                                     </ul>                                
   
                         </div><!-- Collapse -->
