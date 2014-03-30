@@ -19,7 +19,7 @@
                 </div>
             </div>
             <div class="col-sm-12 col-xs-12">
-                <p class="">Copyright <span class="glyphicon glyphicon-copyright-mark"></span> 2014 NET@WORK</p>
+                <p class="">Copyright <span class="glyphicon glyphicon-copyright-mark"></span> 2014 Net@Work</p>
             </div>
 
         </div>
