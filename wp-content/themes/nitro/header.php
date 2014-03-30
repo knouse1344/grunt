@@ -70,11 +70,9 @@
                                                   <div class="col-sm-6">
                                                       <?php wp_nav_menu( array(
                                                         'theme_location' => 'resources',
-                                                        'menu'            => 'menu',
-                                                        'menu_class'      => 'list-unstyled',
                                                         'echo'            => true,
                                                         'fallback_cb'     => 'wp_page_menu',
-                                                        'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+                                                        'items_wrap'      => '<ul class="list-unstyled">%3$s</ul>',
                                                         'depth'           => 1,
                                                         'walker'          => ''
                                                     )); ?></div>
@@ -94,25 +92,18 @@
                                                       <h4>Services</h4>
                                                       <?php wp_nav_menu( array(
                                                         'theme_location' => 'services',
-                                                        'menu'            => 'menu',
-                                                        'menu_class'      => 'list-unstyled',
-                                                        'echo'            => true,
+                                                         'echo'            => true,
                                                         'fallback_cb'     => 'wp_page_menu',
-                                                        'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+                                                        'items_wrap'      => '<ul class="list-unstyled">%3$s</ul>',
                                                         'depth'           => 1,
                                                         'walker'          => ''
                                                     )); ?></div>
                                                   <div class="col-sm-4"><h4>Products</h4>
                                                       <?php wp_nav_menu( array(
                                                         'theme_location' => 'products',
-                                                        'menu'            => 'menu',
-                                                        'container'       => 'container',
-                                                        'container_class' => 'container_class',
-                                                        'container_id'    => 'container_id',
-                                                        'menu_class'      => 'list-unstyled',
                                                         'echo'            => true,
                                                         'fallback_cb'     => 'wp_page_menu',
-                                                        'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+                                                        'items_wrap'      => '<ul class="list-unstyled">%3$s</ul>',
                                                         'depth'           => 1,
                                                         'walker'          => ''
                                                     )); ?></div>
