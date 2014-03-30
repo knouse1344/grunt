@@ -75,7 +75,7 @@
                                                     <div class="col-sm-6"><?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Resources')) : ?>[ Resources: Promotional Widget Area ]<?php endif; ?></div>
                                                 </div>
                                               </li>
-                                            
+                                            </ul>
                                         </li>
                                         
                                         <!-- 1 --> 
