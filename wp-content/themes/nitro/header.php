@@ -46,25 +46,40 @@
                     
                     <div class="row"><!-- PRIMARY MENU START -->
                         <div class="col-sm-12">
-                            <div class="collapse navbar-collapse" id="">   
-                            <?php wp_nav_menu( array(
-                                'theme_location' => 'primary',
-                                'menu'            => 'menu',
-                                'container'       => 'container',
-                                'container_class' => 'container_class',
-                                'container_id'    => 'container_id',
-                                'menu_class'      => 'nav navbar-nav',
-                                'menu_id'         => 'primary',
-                                'echo'            => true,
-                                'fallback_cb'     => 'wp_page_menu',
-                                //'before'          => '',
-                                //'after'           => '',
-                                //'link_before'     => '',
-                                //'link_after'      => '',
-                                'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
-                                'depth'           => 0,
-                                'walker'          => ''
-                            )); ?>
+                            <div class="collapse navbar-collapse" id="">
+                                
+                                    <ul class="nav navbar-nav">
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">SOLUTIONS & SERVICES</a>
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <div class="yamm-content">
+                                                <div class="row"> 
+                                                    <?php wp_nav_menu( array(
+                                                        'theme_location' => 'primary',
+                                                        'menu'            => 'menu',
+                                                        'container'       => 'container',
+                                                        'container_class' => 'container_class',
+                                                        'container_id'    => 'container_id',
+                                                        'menu_class'      => 'nav navbar-nav',
+                                                        'menu_id'         => 'primary',
+                                                        'echo'            => true,
+                                                        'fallback_cb'     => 'wp_page_menu',
+                                                        //'before'          => '',
+                                                        //'after'           => '',
+                                                        //'link_before'     => '',
+                                                        //'link_after'      => '',
+                                                        'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+                                                        'depth'           => 0,
+                                                        'walker'          => ''
+                                                    )); ?>
+                                                </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    </ul>
+  
                         </div><!-- Collapse -->
                     </div><!-- PRIMARY MENU END -->                    
                 </div>
