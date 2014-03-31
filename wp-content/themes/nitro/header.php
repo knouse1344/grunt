@@ -19,13 +19,7 @@
           <div class="container">
               
             <div class="col-sm-3"> <!-- HEADER LEFT START--> 
-              <div class="navbar-header">                        
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>               
+              <div class="navbar-header">                                     
                 <a class="navbar-brand" href="<?php bloginfo('url'); ?>">
                   <img src="<?php header_image(); ?>" alt="<?php bloginfo('name'); ?>"><!--LOGO-->
                 </a>            
@@ -34,6 +28,13 @@
               
             <div class="col-sm-9"><!--HEADER RIGHT START-->
                             
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>  
+                
                     <div class="row hidden-sm hidden-xs"><!-- UTILITY MENU START-->
                         <div class="col-sm-12">
                             <ul class="nav" id="utility-nav">

@@ -155,13 +155,13 @@ padding-right: 15px;
 /* Medium devices (desktops, 992px and up) 
 @media (min-width: @screen-md-min) { ... }*/
 @media (min-width: 992px) {
-    .navbar-brand {
-        margin-top: 0;
+    #header .navbar-brand {
+        margin-top: 16px;
         padding-top: 0;
     }
 }
 
-.navbar-brand {
+#header .navbar-brand {
     margin-top: 0;
     padding-top: 0;
 }
