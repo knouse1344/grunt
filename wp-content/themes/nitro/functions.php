@@ -28,8 +28,7 @@
         $args = array( 
             'label'  => 'Press',
             'public' => true,
-            'supports' => array( 'title', 'editor' )
-            
+            'supports' => array( 'title', 'editor' )            
         );
         register_post_type( 'press', $args );
     }

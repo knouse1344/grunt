@@ -130,7 +130,7 @@
                 <div class="container">
                 <div class="row">
                     <div class="col-xs-12">
-                        <p><span class="icomoon icomoon-home"></span> I'm a Page.</p>
+                        <p><span class="icon icon-home"></span> I'm a Page.</p>
                     </div>
                 </div>
                 </div>
