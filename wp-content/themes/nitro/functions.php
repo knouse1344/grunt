@@ -16,7 +16,8 @@
         $args = array( 
             'label' => 'Email Campaign',
             'public' => true,
-            'supports' => array( 'title', 'editor' )
+            'taxonomies' => array( 'category', 'post_tag'),
+            'supports' => array( 'title', 'editor', 'post_tag' ) 
         );
         register_post_type( 'mailings', $args );
     }
@@ -28,7 +29,8 @@
         $args = array( 
             'label'  => 'Press',
             'public' => true,
-            'supports' => array( 'title', 'editor' )            
+			'taxonomies' => array( 'category', 'post_tag'),
+            'supports' => array( 'title', 'editor', 'post_tag' )            
         );
         register_post_type( 'press', $args );
     }
@@ -40,7 +42,8 @@
         $args = array( 
             'label'  => 'Success Story',
             'public' => true,
-            'supports' => array( 'title', 'editor' )
+            'taxonomies' => array( 'category', 'post_tag'),
+            'supports' => array( 'title', 'editor', 'post_tag' )
             
         );
         register_post_type( 'successstory', $args );
@@ -55,7 +58,8 @@
             'public' => true,
             'publicly_queryable' => false,
             'has_archive' => false,
-            'supports' => array( 'title', 'editor', 'post-format' ) 
+			'taxonomies' => array( 'category', 'post_tag'),
+            'supports' => array( 'title', 'editor', 'post-format', 'post_tag' )
         );
         register_post_type( 'calltoaction', $args );
     }
@@ -93,8 +97,11 @@
     add_theme_support( 'custom-background', $backgroundargs );
 
 #SHORTCODES
-    #@TODO: Locate and enable shortcodes
-
+    #Locate and enable shortcodes
+	if (!is_admin()) 
+	{
+		locate_template(array('/shortcodes.php'), true, false);
+	}
 
 #HEADER
     #ADD-CLASS-TO-MENU-ITEM

@@ -1,6 +1,6 @@
 <IfModule mod_rewrite.c>
     RewriteEngine On
-    RewriteBase /
+    RewriteBase /naw/example-grunt-project/
 
     # BEGIN WordPress
     RewriteRule ^$ wordpress/index.php [L]

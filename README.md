@@ -113,4 +113,7 @@ Add your new (project) origin repository to your working copy:
 
     git remote add origin <url_here>
 
+Define wp-content location in wp-config.php
 
+	define( 'WP_CONTENT_DIR', dirname( __FILE__ ) . '/wp-content' );
+	define( 'WP_CONTENT_URL', 'http://' . $_SERVER['HTTP_HOST'] . '<sub-folder path>/wp-content' );

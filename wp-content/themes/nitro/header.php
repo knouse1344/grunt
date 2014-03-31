@@ -11,7 +11,7 @@
     <?php wp_head(); ?>
 </head><!--HEAD END-->
     
-<body class="custom-background">
+<body class="custom-background woocommerce">
     <div id="wrap">
 
         

@@ -16,3 +16,4 @@ sitemap.xml.gz
 uploads/*
 test-infra
 test-infra/*
+.htaccess
