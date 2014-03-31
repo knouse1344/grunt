@@ -133,7 +133,7 @@
                     <div class="col-xs-7">
                         <h1><span class="icon icon-pie"></span>Page Title</h1>
                     </div>
-                    <div class="col-xs-5 pull-right">
+                    <div class="col-xs-5 pull-right hidden-xs">
                         <button class="btn btn-default pull-right contact-us"><span class="icon icon-bubbles"></span>CONTACT US</button>
                     </div>
                 </div>
