@@ -171,7 +171,6 @@
     ) );
 
 
-
 #BREADCRUMBS
     function the_breadcrumb() {
         if (!is_home()) {
