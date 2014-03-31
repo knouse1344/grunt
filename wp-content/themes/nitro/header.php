@@ -18,7 +18,7 @@
         <nav class="navbar yamm navbar-default navbar-static-top" role="navigation" id="header"><!-- HEADER NAV START -->
           <div class="container">
               
-            <div class="col-sm-3"> <!-- HEADER LEFT START--> 
+            <div class="col-xs-3"> <!-- HEADER LEFT START--> 
               <div class="navbar-header">                                     
                 <a class="navbar-brand" href="<?php bloginfo('url'); ?>">
                   <img src="<?php header_image(); ?>" alt="<?php bloginfo('name'); ?>"><!--LOGO-->
@@ -26,7 +26,7 @@
               </div>
             </div><!-- HEADER LEFT END--> 
               
-            <div class="col-sm-9"><!--HEADER RIGHT START-->
+            <div class="col-xs-9"><!--HEADER RIGHT START-->
                             
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="">
                     <span class="sr-only">Toggle navigation</span>
@@ -130,11 +130,11 @@
             <div class="page-banner">
                 <div class="container">
                 <div class="row">
-                    <div class="col-xs-9">
+                    <div class="col-xs-7">
                         <h1><span class="icon icon-pie"></span>Page Title</h1>
                     </div>
-                    <div class="col-xs-3 pull-right">
-                        <button class="btn btn-default contact-us"><span class="icon icon-bubbles"></span>CONTACT US</button>
+                    <div class="col-xs-5 pull-right">
+                        <button class="btn btn-default pull-right contact-us"><span class="icon icon-bubbles"></span>CONTACT US</button>
                     </div>
                 </div>
                 </div>
