@@ -164,9 +164,9 @@ body {
 /* =Icomoon Fonts
 -------------------------------------------------------------- */
 @font-face {
-	font-family: Museo300;  
+	font-family: icomoon-font-tab;  
 	src: local('icomoon-font-tab'), 
-		url("dist/fonts/icomoon.ttf") format('truetype');  
+		url("dist/fonts/icomoon.woff") format('woff');  
 	font-weight: normal;  
 }
 
