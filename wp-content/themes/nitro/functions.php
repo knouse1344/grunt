@@ -115,7 +115,7 @@
 
     #PRIMARY-NAV-MENU
     register_nav_menu( 'resources', 'Resources Menu' );
-    register_nav_menu( 'services', 'Products Menu' );
+    register_nav_menu( 'services', 'Services Menu' );
     register_nav_menu( 'products', 'Products Menu' );
 
     #REGISTER-RESOURCES-WIDGET
