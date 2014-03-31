@@ -160,3 +160,13 @@ a img.aligncenter {
 body {
     font-weight:200;
 }
+
+/* =Icomoon Fonts
+-------------------------------------------------------------- */
+.icomoon:hover, .icomoon.active {
+    color: #449fdb;
+}
+.icomoon {
+    font-family: 'icomoon-font-tab', sans-serif;
+    color:white;
+}
