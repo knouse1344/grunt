@@ -163,6 +163,13 @@ body {
 
 /* =Icomoon Fonts
 -------------------------------------------------------------- */
+@font-face {
+	font-family: Museo300;  
+	src: local('icomoon-font-tab'), 
+		url("dist/fonts/icomoon.ttf") format('truetype');  
+	font-weight: normal;  
+}
+
 .icomoon:hover, .icomoon.active {
     color: #449fdb;
 }
