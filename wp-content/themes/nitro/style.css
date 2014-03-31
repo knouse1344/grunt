@@ -130,14 +130,19 @@ a img.aligncenter {
     color: #D3E0EC; 
 }
 .page-banner h1 {
-    font-weight: 200;
+    font-weight: 300;
     font-size: 2.1em;
     vertical-align: top;
     line-height: 2em;
+    margin-top: 16px;
+    margin-bottom: 2px;
 }
 .page-banner .icon {
 font-size: 1.8em;
 padding-right: 15px;
+}
+.page-banner .icon:hover {
+    color:#2f2f2f;
 }
 
 /* =Footer
