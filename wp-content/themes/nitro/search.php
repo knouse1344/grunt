@@ -5,6 +5,7 @@
         
         <div class="col-xs-12">
             
+            <div class="page-title">Search Results</div>
             
             <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
             
