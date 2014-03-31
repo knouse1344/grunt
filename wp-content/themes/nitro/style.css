@@ -164,7 +164,7 @@ body {
 /* =Icomoon Fonts
 -------------------------------------------------------------- */
 @font-face {
-	font-family: icomoon-font-tab;  
+	font-family: icomoon;  
 	src: url('dist/fonts/icomoon.woff');  
 }
 
@@ -172,6 +172,6 @@ body {
     color: #449fdb;
 }
 .icomoon {
-    font-family: 'icomoon-font-tab', sans-serif;
+    font-family: 'icomoon', sans-serif;
     color:white;
 }
