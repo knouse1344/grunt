@@ -59,7 +59,7 @@
                                         
                                         <!-- 2 -->                                       
                                         <li class="dropdown yamm-fw navbar-right">
-                                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">LEARNING CENTER <b class="caret"></b></a>
+                                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">LEARNING CENTER</a>
                                             <ul class="dropdown-menu">
                                               <li class="yamm-content">
                                                 <div class="row">
@@ -144,8 +144,9 @@
           <div class="container">
              <ol class="breadcrumb">
               <li><a href="#">Home</a></li>
-              <li><a href="#">Library</a></li>
-              <li class="active">Data</li>
+              <li><a href="#">Business Applications</a></li>
+              <li><a href="#">ERP/Accounting</a></li>     
+              <li class="active">Sage 100 ERP</li>
             </ol>
           </div>
         </div>
