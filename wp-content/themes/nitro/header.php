@@ -130,7 +130,7 @@
                 <div class="container">
                 <div class="row">
                     <div class="col-xs-12">
-                        <p><span class="icon icon-home"></span> I'm a Page.</p>
+                        <span class="icon icon-home"></span><h1>Page Title</h1>
                     </div>
                 </div>
                 </div>

@@ -126,7 +126,14 @@ a img.aligncenter {
     background-color: transparent;
 }
 .page-banner {
-    background-color: #316AB6;
+    background-color: #00386A;
+    padding-top:20px;
+    padding-bottom:10px;
+    color: #E5E5E5;
+}
+.page-banner .icon {
+    font-size: 3em;
+    padding-right: 15px;
 }
 
 /* =Footer
