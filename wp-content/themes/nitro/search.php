@@ -5,7 +5,7 @@
         
         <div class="col-xs-12">
             
-            <div class="page-header"><h1>Search Results</h1></div>
+            <div class="page-header"><p class="lead">Search Results</p></div>
             
             <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
             
