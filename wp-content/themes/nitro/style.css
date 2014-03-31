@@ -141,9 +141,6 @@ a img.aligncenter {
 font-size: 1.8em;
 padding-right: 15px;
 }
-.page-banner .icon:hover {
-    color:#f2f2f2;
-}
 .page-banner .contact-us {
     color: #2475BD;
     border-radius: 0;
@@ -153,6 +150,20 @@ padding-right: 15px;
     background-color: #f2f2f2;
     font-size: 1.1em;
     margin-top: 23px;
+    margin-right: 15px;
+}
+/* Medium devices (desktops, 992px and up) 
+@media (min-width: @screen-md-min) { ... }*/
+@media (min-width: 992px) {
+    .navbar-brand {
+        margin-top: 0;
+        padding-top: 0;
+    }
+}
+
+.navbar-brand {
+    margin-top: 0;
+    padding-top: 0;
 }
 
 /* =Footer
