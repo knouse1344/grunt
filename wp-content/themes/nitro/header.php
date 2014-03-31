@@ -123,3 +123,12 @@
         </div><!--HEADER RIGHT END-->
         </nav><!-- HEADER NAV END -->
         
+<?php if ( is_page() ) { ?>
+        
+     <p>I'm a Page.</p>   
+        
+<?php } else { ?>
+     
+    <p>I'm not a Page.</p>    
+        
+<?php }	?>
