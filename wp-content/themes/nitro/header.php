@@ -126,7 +126,7 @@
         <!-- SHOW PAGE BANNER -->        
         <?php if ( is_page() ) { ?>
                 
-            <div class="page-header">
+            <div class="page-banner container">
                 <div class="row">
                     <div class="col-xs-12">
                         <p>I'm a Page.</p>
