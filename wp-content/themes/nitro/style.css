@@ -116,6 +116,9 @@ a img.aligncenter {
     border-radius: 0;
     border: none;
 }
+#primary > li.dropdown.yamm-fw.navbar-right.open > ul {
+border-top: white 1px solid;
+}
 .yamm .dropdown .dropdown-menu {
     margin-top: 10px;
 }
