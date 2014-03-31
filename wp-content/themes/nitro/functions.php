@@ -4,7 +4,7 @@
     function bootstrap() 
         {
             wp_enqueue_style( 'styles-css', get_stylesheet_uri() );
-            wp_enqueue_style( 'icomoon-css', get_template_directory_uri() . 'icomoon.css' );
+            wp_enqueue_style( 'icomoon-css', get_template_directory_uri() . '/icomoon.css' );
             wp_enqueue_style( 'bootstrap-css', get_template_directory_uri() . '/dist/css/bootstrap.css' );
             wp_enqueue_script( 'bootstrap-js', get_template_directory_uri() . '/dist/js/bootstrap.js', array('jquery') );
         }
