@@ -144,6 +144,16 @@ padding-right: 15px;
 .page-banner .icon:hover {
     color:#f2f2f2;
 }
+.page-banner .contact-us {
+    color: #2475BD;
+    border-radius: 0;
+    vertical-align: top;
+    padding: 8px 13px 0px;
+    line-height: 2em;
+    background-color: #f2f2f2;
+    font-size: 1.1em;
+    margin-top: 23px;
+}
 
 /* =Footer
 -------------------------------------------------------------- */
