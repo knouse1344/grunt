@@ -126,11 +126,13 @@
         <!-- SHOW PAGE BANNER -->        
         <?php if ( is_page() ) { ?>
                 
-            <div class="page-banner container">
+            <div class="page-banner">
+                <div class="container">
                 <div class="row">
                     <div class="col-xs-12">
                         <p>I'm a Page.</p>
                     </div>
+                </div>
                 </div>
             </div>
                 
