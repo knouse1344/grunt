@@ -59,17 +59,22 @@ Webteam ongoing refactor to discover, discuss, and document our own best practic
 
 Clone the repository:
 
-    git clone --recursive git@github.com:NetatWork/example-grunt-project.git
+    git clone git@github.com:NetatWork/example-grunt-project.git
     
 Install Development Dependencies (you need to have Node and Node Package Manager installed on your environment)
 
     cd <root directory>
-    npm install
+    `npm install`
 
 Get Latest Submodules
 
-    git submodule update --recursive
+    cd <root directory>
+    `git submodule update --recursive`
     
+Create Wordpress Config file from Sample
+    
+    cd <root directory>
+    run command `grunt`
     
 ### To Create a New Project from Nitro
 
