@@ -161,21 +161,3 @@ body {
     font-weight:200;
     -webkit-font-smoothing: antialiased;
 }
-
-/* =Icomoon Fonts
--------------------------------------------------------------- */
-@font-face {
-	font-family: icomoon;  
-	src: url('dist/fonts/icomoon.woff');  
-}
-
-.icomoon:hover, .icomoon.active {
-    color: #449fdb;
-}
-.icomoon {
-    font-family: 'icomoon', sans-serif;
-    color:white;
-}
-.icomoon-home:before {
-content: "U+e600";
-}
