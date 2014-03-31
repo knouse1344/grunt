@@ -165,9 +165,7 @@ body {
 -------------------------------------------------------------- */
 @font-face {
 	font-family: icomoon-font-tab;  
-	src: local('icomoon-font-tab'), 
-		url("dist/fonts/icomoon.woff") format('woff');  
-	font-weight: normal;  
+	src: url('dist/fonts/icomoon.woff');  
 }
 
 .icomoon:hover, .icomoon.active {
