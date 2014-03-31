@@ -130,10 +130,10 @@
             <div class="page-banner">
                 <div class="container">
                 <div class="row">
-                    <div class="col-xs-7">
+                    <div class="col-xs-10">
                         <h1><span class="icon icon-pie"></span>Page Title</h1>
                     </div>
-                    <div class="col-xs-5 pull-right hidden-xs">
+                    <div class="col-xs-2 pull-right hidden-xs">
                         <button class="btn btn-default pull-right contact-us"><span class="icon icon-bubbles"></span>CONTACT US</button>
                     </div>
                 </div>
