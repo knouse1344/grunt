@@ -139,6 +139,17 @@
                 </div>
                 </div>
             </div>
+        <!-- BREADCRUMBS -->
+        <div id="breadcrumbs-banner">
+          <div class="container">
+             <ol class="breadcrumb">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Library</a></li>
+              <li class="active">Data</li>
+            </ol>
+          </div>
+        </div>
+        
                 
         <?php } else { ?>
               
