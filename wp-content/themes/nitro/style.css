@@ -159,6 +159,7 @@ a img.aligncenter {
 -------------------------------------------------------------- */
 body {
     font-weight:200;
+    -webkit-font-smoothing: antialiased;
 }
 
 /* =Icomoon Fonts
@@ -174,4 +175,7 @@ body {
 .icomoon {
     font-family: 'icomoon', sans-serif;
     color:white;
+}
+.icomoon-home:before {
+content: "U+e600";
 }
