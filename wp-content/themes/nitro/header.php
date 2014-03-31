@@ -80,7 +80,7 @@
                                         
                                         <!-- 1 --> 
                                         <li class="dropdown yamm-fw navbar-right">
-                                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">SOLUTIONS & SERVICES <b class="caret"></b></a>
+                                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">SOLUTIONS & SERVICES</a>
                                             <ul class="dropdown-menu">
                                               <li class="yamm-content">
                                                 <div class="row">
@@ -122,13 +122,20 @@
             </div>
         </div><!--HEADER RIGHT END-->
         </nav><!-- HEADER NAV END -->
+
+        <!-- SHOW PAGE BANNER -->        
+        <?php if ( is_page() ) { ?>
+                
+            <div class="page-header">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <p>I'm a Page.</p>
+                    </div>
+                </div>
+            </div>
+                
+        <?php } else { ?>
+              
+            <!-- I'M NOT A PAGE SO I DON'T NEED PAGE HEADER --> 
         
-<?php if ( is_page() ) { ?>
-        
-     <p>I'm a Page.</p>   
-        
-<?php } else { ?>
-     
-    <p>I'm not a Page.</p>    
-        
-<?php }	?>
+        <?php }	?>
