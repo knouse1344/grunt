@@ -41,6 +41,7 @@
 		</div>
 		<!-- Right Sidebar -->
 		<div class="col-sm-3 col-xs-12">
+		<br/>
 			<div class="leftnav">
 				<?php 
 				$values = get_post_custom( $post->ID );
@@ -59,12 +60,13 @@
 				'after'           => '',
 				'link_before'     => '',
 				'link_after'      => '',
-				'items_wrap'      => '<ul id="%1$s" class="%2$s list-group-item">%3$s</ul>',
+				'items_wrap'      => '<ul class="list-unstyled list-group-item">%3$s</ul>',
 				'depth'           => -1,
 				'walker'          => ''
 			);
 				wp_nav_menu( $args); ?>
 			</div>
+			<br/>
 			<?php 
 				/*CALL TO ACTION" */
 				get_template_part('part', 'calltoaction');	
@@ -76,7 +78,7 @@
 				if ($naw !='' && $naw_link !='')
 				{
 			?>
-			
+			<br/>
 			<div class="panel panel-default"><div class="panel-body"><h4>About Net@Work</h4>
 				<?php 
 					echo $naw;

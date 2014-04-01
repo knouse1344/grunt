@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <meta name="description" content="">
     <meta name="author" content="">
     <title><?php wp_title('|',true,'right'); ?><?php bloginfo('name'); ?></title>
     <?php wp_head(); ?>
@@ -131,10 +131,10 @@
                 <div class="container">
                 <div class="row">
                     <div class="col-xs-10">
-                        <h1><span class="icon icon-pie"></span><?php the_title(); ?></h1>
+                        <h1><span class="icon icon-pie"></span>Page Title</h1>
                     </div>
                     <div class="col-xs-2 pull-right hidden-xs">
-                        <button class="btn btn-default pull-right contact-us"><a href="/naw/example-grunt-project/wordpress/contact_1/"><span class="icon icon-bubbles"></span>CONTACT US</a></button>
+                        <button class="btn btn-default pull-right contact-us"><span class="icon icon-bubbles"></span>CONTACT US</button>
                     </div>
                 </div>
                 </div>
@@ -142,9 +142,12 @@
         <!-- BREADCRUMBS -->
         <div id="breadcrumbs-banner">
           <div class="container">
-             <?php if ( function_exists('yoast_breadcrumb') ) {
-yoast_breadcrumb('<p id="breadcrumbs">','</p>');
-} ?>
+             <ol class="breadcrumb">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Business Applications</a></li>
+              <li><a href="#">ERP/Accounting</a></li>     
+              <li class="active">Sage 100 ERP</li>
+            </ol>
           </div>
         </div>
         
