@@ -55,7 +55,7 @@
                                         <li class="dropdown yamm-fw navbar-right"><a href="#">SUPPORT</a></li>
                                         
                                         <!-- 3 --> 
-                                        <li class="dropdown yamm-fw navbar-right"><a href="#">COMPANY</a></li>
+                                        <li class="dropdown yamm-fw navbar-right"><a href="/naw/example-grunt-project/wordpress/aboutus_1/">COMPANY</a></li>
                                         
                                         <!-- 2 -->                                       
                                         <li class="dropdown yamm-fw navbar-right">
@@ -66,6 +66,7 @@
                                                   <div class="col-sm-6">
                                                       <?php wp_nav_menu( array(
                                                         'theme_location' => 'resources',
+														'menu'            => 'Learning Center',
                                                         'echo'            => true,
                                                         'fallback_cb'     => 'wp_page_menu',
                                                         'items_wrap'      => '<ul class="list-unstyled">%3$s</ul>',
@@ -89,6 +90,7 @@
                                                       <h4>Services</h4>
                                                       <?php wp_nav_menu( array(
                                                         'theme_location' => 'services',
+														'menu'            => 'Solutions and Services',
                                                          'echo'            => true,
                                                         'fallback_cb'     => 'wp_page_menu',
                                                         'items_wrap'      => '<ul class="list-unstyled">%3$s</ul>',
@@ -98,6 +100,7 @@
                                                   <div class="col-sm-4"><h4>Products</h4>
                                                       <?php wp_nav_menu( array(
                                                         'theme_location' => 'products',
+														'menu'            => 'products',
                                                         'echo'            => true,
                                                         'fallback_cb'     => 'wp_page_menu',
                                                         'items_wrap'      => '<ul class="list-unstyled">%3$s</ul>',
