@@ -1,18 +1,24 @@
 <?php get_header(); ?>
 
-  <div id="primary-content" class="container" role="main">
+  <div class="container" role="main">
       <div class="row">
 		
 		<!--- Start Body Content --->
-		<div class="col-sm-9 col-xs-12">
+		<div id="primary-content" class="col-sm-9 col-xs-12">
 			
 			<div class="row">
 				<div class="col-sm-12 col-xs-12">
 				<?php if (have_posts()) : while (have_posts()) : the_post();?>    
+<<<<<<< HEAD
 					&nbsp;
 					<?php the_content(); ?>
 					<?php endwhile; endif;?>
 
+=======
+					<?php the_content(); ?>
+				<?php endwhile; endif;?>
+				
+>>>>>>> ffa1f9c0702c36b1873c91a35731b224f65d8994
 					<div class="tabbable">
 						<ul class="nav nav-tabs" id="custom-tabs-19">
 						<li class="active"><a href="#custom-tab-0-webinars" data-toggle="tab"><?php echo the_title();?> Webinars</a></li>
@@ -77,15 +83,15 @@
 			<div class="panel panel-default"><div class="panel-body"><h4>About Net@Work</h4>
 				<?php 
 					echo $naw;
-					echo '<br/><br/><a href="' .$naw_link. '" class="btn btn-primary btn-sm">Learn More>></a>';
+					echo '<a href="' .$naw_link. '" class="btn btn-primary btn-sm">Learn More &raquo;</a>';
 				?>
 			</div></div>
 				<?php } 
 				else
 				{
 					echo '<div class="panel panel-default"><div class="panel-body"><h4>About Net@Work</h4>';
-					echo '<p>Default Text</p>';
-					echo '<br/><br/><a href="#" class="btn btn-primary btn-sm">Learn More>></a></div></div>';
+					echo '<p>Net@Work is one of the leading authorized Sage 100 ERP partners, resellers and consultants. Our consultants and developers have extensive experience in Sage 100 ERP, as well as the full Sage ERP product portfolio, including installs, upgrades, conversions, customizations, support and training.</p>';
+					echo '<a href="#" class="btn btn-primary btn-sm">Learn More &raquo;</a></div></div>';
 				}
 				?>
 		</div>
