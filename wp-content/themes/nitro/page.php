@@ -9,15 +9,10 @@
 			<div class="row">
 				<div class="col-sm-12 col-xs-12">
 				<?php if (have_posts()) : while (have_posts()) : the_post();?>    
-					<h1><?php the_title();?></h1>
+					&nbsp;
 					<?php the_content(); ?>
-					<!-- Getting Parent Page ID -->
-					<h1><?php $parent = array_reverse(get_post_ancestors($post->ID));
-							  $first_parent = get_page($parent[0]);?>
-					</h1>
-					<!-- End Parent Page ID -->
-				<?php endwhile; endif;?>
-				
+					<?php endwhile; endif;?>
+
 					<div class="tabbable">
 						<ul class="nav nav-tabs" id="custom-tabs-19">
 						<li class="active"><a href="#custom-tab-0-webinars" data-toggle="tab"><?php echo the_title();?> Webinars</a></li>
