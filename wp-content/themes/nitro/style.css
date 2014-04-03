@@ -54,7 +54,6 @@ a img.aligncenter {
 .wp-caption {
     background: #fff;
     border: 1px solid #f0f0f0;
-    max-width: 96%; /* Image does not overflow the content area */
     padding: 5px 3px 10px;
     text-align: center;
 }
@@ -75,7 +74,6 @@ a img.aligncenter {
     border: 0 none;
     height: auto;
     margin: 0;
-    max-width: 98.5%;
     padding: 0;
     width: auto;
 }
@@ -95,9 +93,6 @@ a img.aligncenter {
 }
 .navbar-text .navbar-link {
     padding: 0 10px;
-}
-#search-input {
-    max-width:175px;
 }
 #header {
     padding-top: 10px;
