@@ -201,10 +201,21 @@ border-top: white 1px solid;
 
 /* =Global
 -------------------------------------------------------------- */
+h1,h2,h3,h4,h5,h6 {
+    color: #004D91;
+}
+
 body {
     font-weight:200;
     -webkit-font-smoothing: antialiased;
 }
 img {
     max-width:100%;
+}
+
+/* =Primary Content
+-------------------------------------------------------------- */
+
+#primary-content {
+    margin-top: 20px;
 }

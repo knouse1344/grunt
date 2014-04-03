@@ -1,10 +1,10 @@
 <?php get_header(); ?>
 
-  <div id="primary-content" class="container" role="main">
+  <div class="container" role="main">
       <div class="row">
 		
 		<!--- Start Body Content --->
-		<div class="col-sm-9 col-xs-12">
+		<div id="primary-content" class="col-sm-9 col-xs-12">
 			
 			<div class="row">
 				<div class="col-sm-12 col-xs-12">

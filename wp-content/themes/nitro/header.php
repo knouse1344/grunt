@@ -145,9 +145,9 @@
         <!-- BREADCRUMBS -->
         <div id="breadcrumbs-banner">
           <div class="container">
-             <?php if ( function_exists('yoast_breadcrumb') ) {
-yoast_breadcrumb('<p id="breadcrumbs">','</p>');
-} ?>
+                <?php if ( function_exists('yoast_breadcrumb') ) {
+                    yoast_breadcrumb('<p id="breadcrumbs">','</p>');
+                } ?>
           </div>
         </div>
         
