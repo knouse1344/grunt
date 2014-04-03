@@ -82,15 +82,15 @@
 			<div class="panel panel-default"><div class="panel-body"><h4>About Net@Work</h4>
 				<?php 
 					echo $naw;
-					echo '<br/><br/><a href="' .$naw_link. '" class="btn btn-primary btn-sm">Learn More>></a>';
+					echo '<a href="' .$naw_link. '" class="btn btn-primary btn-sm">Learn More &raquo;</a>';
 				?>
 			</div></div>
 				<?php } 
 				else
 				{
 					echo '<div class="panel panel-default"><div class="panel-body"><h4>About Net@Work</h4>';
-					echo '<p>Default Text</p>';
-					echo '<br/><br/><a href="#" class="btn btn-primary btn-sm">Learn More>></a></div></div>';
+					echo '<p>Net@Work is one of the leading authorized Sage 100 ERP partners, resellers and consultants. Our consultants and developers have extensive experience in Sage 100 ERP, as well as the full Sage ERP product portfolio, including installs, upgrades, conversions, customizations, support and training.</p>';
+					echo '<a href="#" class="btn btn-primary btn-sm">Learn More &raquo;</a></div></div>';
 				}
 				?>
 		</div>
