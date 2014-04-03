@@ -5,21 +5,16 @@
 		
 		<!--- Start Body Content --->
 		<div id="primary-content" class="col-sm-9 col-xs-12">
-			
 			<div class="row">
 				<div class="col-sm-12 col-xs-12">
 				<?php if (have_posts()) : while (have_posts()) : the_post();?>    
-<<<<<<< HEAD
 					&nbsp;
 					<?php the_content(); ?>
 					<?php endwhile; endif;?>
-
-=======
 					<?php the_content(); ?>
 				<?php endwhile; endif;?>
-				
->>>>>>> ffa1f9c0702c36b1873c91a35731b224f65d8994
-					<div class="tabbable">
+	
+				<div class="tabbable">
 						<ul class="nav nav-tabs" id="custom-tabs-19">
 						<li class="active"><a href="#custom-tab-0-webinars" data-toggle="tab"><?php echo the_title();?> Webinars</a></li>
 						<li><a href="#custom-tab-0-success-stories" data-toggle="tab">Success Stories</a></li>
