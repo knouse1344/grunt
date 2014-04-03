@@ -205,3 +205,6 @@ body {
     font-weight:200;
     -webkit-font-smoothing: antialiased;
 }
+img {
+    max-width:100%;
+}
