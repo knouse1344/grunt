@@ -44,14 +44,11 @@
 				'menu'            => $menuselected,
 				'container'       => 'div',
 				'container_class' => 'sidemenu',
-				'container_id'    => '',
 				'menu_class'      => 'list-group',
-				'menu_id'         => '',
 				'echo'            => true,
 				'fallback_cb'     => 'wp_page_menu',
-				'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
-				'depth'           => -1,
-				'walker'          => ''
+				'items_wrap'      => '%3$s',
+				'depth'           => -1
 			);
 				wp_nav_menu( $args); ?>
 			</div>
