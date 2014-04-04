@@ -8,7 +8,6 @@
 			<div class="row">
 				<div class="col-sm-12 col-xs-12">
 				<?php if (have_posts()) : while (have_posts()) : the_post();?>    
-					&nbsp;
 					<?php the_content(); ?>
 				<?php endwhile; endif;?>
 	
@@ -33,9 +32,9 @@
 				</div>
 			</div>
 		</div>
+          
 		<!-- Right Sidebar -->
 		<div class="col-sm-3 col-xs-12">
-		<br/>
 			<div class="leftnav">
 				<?php 
 				$values = get_post_custom( $post->ID );
@@ -56,7 +55,7 @@
 			);
 				wp_nav_menu( $args); ?>
 			</div>
-			<br/>
+
 			<?php 
 				/*CALL TO ACTION" */
 				get_template_part('part', 'calltoaction');	
