@@ -35,7 +35,7 @@
           
 		<!-- Right Sidebar -->
 		<div class="col-sm-3 col-xs-12">
-			<div class="leftnav">
+		
 				<?php 
 				$values = get_post_custom( $post->ID );
 				$menuselected = isset( $values['naw_menu_select'] ) ? esc_attr( $values['naw_menu_select'][0] ) : '';
@@ -43,7 +43,7 @@
 				'theme_location'  => '',
 				'menu'            => $menuselected,
 				'container'       => 'div',
-				'container_class' => 'sidemenu',
+				'container_class' => 'sidebar',
 				'menu_class'      => 'list-group',
 				'echo'            => true,
 				'fallback_cb'     => 'wp_page_menu',
@@ -51,7 +51,7 @@
 				'depth'           => -1
 			);
 				wp_nav_menu( $args); ?>
-			</div>
+		
 
 			<?php 
 				/*CALL TO ACTION" */
