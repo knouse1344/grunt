@@ -370,4 +370,7 @@ function cd_naw_meta_cb( $post ){
     }
     add_action( 'save_post', 'cd_naw_meta_wbsave' );
 
+#FILTER TO ADD CLASS
+	add_filter('wp_list_pages', create_function('$t', 'return str_replace("<li ", "<li class=\"list-group-item\" ", $t);'));
+	
 ?>

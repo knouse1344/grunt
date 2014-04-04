@@ -35,25 +35,50 @@
           
 		<!-- Right Sidebar -->
 		<div class="col-sm-3 col-xs-12">
-		
+				
 				<?php 
+				$parent = array_reverse(get_post_ancestors($post->ID));
+				$first_parent = get_page($parent[1])->post_title;
+				//echo $first_parent;
+							
 				$values = get_post_custom( $post->ID );
 				$menuselected = isset( $values['naw_menu_select'] ) ? esc_attr( $values['naw_menu_select'][0] ) : '';
+				if ($menuselected == 'default' OR $menudefault == NULL)
+				{
+					$menuselected == 'Services';
+				}
+				
+				switch ($first_parent)
+				{
+					case 'Business Applications':
+						$menuselected = 'Right - Business Applications';
+						break;
+					case 'Web Solutions':
+						$menuselected = 'Right - Web Solutions';
+						break;
+					case 'Systems Integration':
+						$menuselected = 'Right - System Integration';
+						break;
+					default:
+						$menuselected == 'Services';
+				}
+				
 				$args = array(
 				'theme_location'  => '',
 				'menu'            => $menuselected,
 				'container'       => 'div',
-				'container_class' => 'sidebar',
-				'menu_class'      => 'list-group',
+				'container_class' => 'list-group',
+				'menu_class'      => 'list-group-item',
 				'echo'            => true,
 				'fallback_cb'     => 'wp_page_menu',
-				'items_wrap'      => '%3$s',
-				'depth'           => -1
+				'items_wrap'      => '<ul class="list-unstyled list-group-item">%3$s</ul>',
+				'depth'           => 2
 			);
 				wp_nav_menu( $args); ?>
 		
 
 			<?php 
+				
 				/*CALL TO ACTION" */
 				get_template_part('part', 'calltoaction');	
 				
