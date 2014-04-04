@@ -14,9 +14,9 @@
 	
 				<div class="tabbable">
 						<ul class="nav nav-tabs" id="custom-tabs-19">
-						<li class="active"><a href="#custom-tab-0-webinars" data-toggle="tab"><?php echo the_title();?> Webinars</a></li>
-						<li><a href="#custom-tab-0-success-stories" data-toggle="tab">Success Stories</a></li>
-						<li><a href="#custom-tab-0-newsletters" data-toggle="tab">Newsletters</a></li>
+                            <li class="active"><a href="#custom-tab-0-webinars" data-toggle="tab"><?php echo the_title();?> Webinars</a></li>
+                            <li><a href="#custom-tab-0-success-stories" data-toggle="tab">Success Stories</a></li>
+                            <li><a href="#custom-tab-0-newsletters" data-toggle="tab">Newsletters</a></li>
 						</ul>
 						<div class="tab-content">
 							<div id="custom-tab-0-webinars" class="tab-pane active"> 		
@@ -50,11 +50,7 @@
 				'menu_id'         => '',
 				'echo'            => true,
 				'fallback_cb'     => 'wp_page_menu',
-				'before'          => '',
-				'after'           => '',
-				'link_before'     => '',
-				'link_after'      => '',
-				'items_wrap'      => '<ul class="list-unstyled list-group-item">%3$s</ul>',
+				'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
 				'depth'           => -1,
 				'walker'          => ''
 			);
