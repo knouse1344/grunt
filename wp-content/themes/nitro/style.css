@@ -7,7 +7,8 @@ Version: 1.0
 /* =WordPress Core Classes
 -------------------------------------------------------------- */
 .alignnone {
-    margin: 5px 20px 20px 0;
+    margin: 0;
+    max-width:100%
 }
 
 .aligncenter,
@@ -153,17 +154,9 @@ border-top: white 1px solid;
     vertical-align: top;
     text-decoration: none;
 }
-/* Medium devices (desktops, 992px and up) 
-@media (min-width: @screen-md-min) { ... }*/
-@media (min-width: 992px) {
-    #header .navbar-brand {
-        margin-top: 16px;
-        padding-top: 0;
-    }
-}
 #header .navbar-brand {
-    margin-top: 0;
-    padding-top: 0;
+    margin: 0;
+    padding: 0;
 }
 #breadcrumbs-banner ol {
     margin-bottom: 0;
@@ -219,3 +212,15 @@ img {
 #primary-content {
     margin-top: 20px;
 }
+
+/* =MOBILE (SM) FIXES
+-------------------------------------------------------------- */
+@media only screen and (min-width: 640px)  {
+    #header .navbar-brand {
+        margin-top: 15;
+    }                   
+}
+                
+/* =MOBILE (MD) FIXES @media (min-width: @screen-md-min) { ... }*/
+-------------------------------------------------------------- */
+
