@@ -4,21 +4,17 @@
 <head><!--HEAD START-->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <meta name="author" content="">
     <title><?php wp_title('|',true,'right'); ?><?php bloginfo('name'); ?></title>
     <?php wp_head(); ?>
 </head><!--HEAD END-->
     
 <body class="custom-background woocommerce">
-    <div id="wrap">
-
-        
-        <nav class="navbar yamm navbar-default navbar-static-top" role="navigation" id="header"><!-- HEADER NAV START -->
-          <div class="container">
-              
-            <div class="col-xs-3"> <!-- HEADER LEFT START--> 
+    <div id="wrap">       
+        <nav class="navbar yamm navbar-default navbar-static-top" role="navigation" id="header"><!-- HEADER NAVSTART -->
+          <div class="container">      
+            <div class="col-xs-6 col-sm-3"> <!-- HEADER LEFT START--> 
               <div class="navbar-header">                                     
                 <a class="navbar-brand" href="<?php bloginfo('url'); ?>">
                   <img src="<?php header_image(); ?>" alt="<?php bloginfo('name'); ?>"><!--LOGO-->
@@ -26,7 +22,7 @@
               </div>
             </div><!-- HEADER LEFT END--> 
               
-            <div class="col-xs-9"><!--HEADER RIGHT START-->
+            <div class="col-xs-6 col-sm-9"><!--HEADER RIGHT START-->
                             
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="">
                     <span class="sr-only">Toggle navigation</span>

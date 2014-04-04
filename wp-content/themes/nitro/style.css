@@ -100,6 +100,15 @@ a img.aligncenter {
     padding-bottom: 10px;
     margin-bottom: 0;
 }
+.navbar-default .navbar-toggle {
+    border-color: #dddddd;
+    background-color: rgb(239, 239, 239);
+    border-radius: 0;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: rgb(205, 205, 205);
+    border: 1px solid rgb(255, 255, 255);
+}
 #primary > li > a {
     font-size: 1.2em;
     font-weight: 400;
@@ -213,6 +222,11 @@ img {
     margin-top: 20px;
 }
 
+#primary-content h2 {
+    color: #1469B4;
+    margin-top: 0;
+}
+
 /* =MOBILE (SM) FIXES
 -------------------------------------------------------------- */
 @media only screen and (min-width: 640px)  {
@@ -221,6 +235,6 @@ img {
     }                   
 }
                 
-/* =MOBILE (MD) FIXES @media (min-width: @screen-md-min) { ... }*/
+/* =MOBILE (MD) FIXES @media (min-width: @screen-md-min) { ... }
 -------------------------------------------------------------- */
 
