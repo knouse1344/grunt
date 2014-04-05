@@ -77,7 +77,7 @@
                     'container'         => 'div',
                     'container_class'   => 'page-sidebar-nav',
                     'container_id'      => 'page-sidebar-nav',
-                    'menu_class'        => 'nav navbar-nav',
+                    'menu_class'        => 'list-group',
                     'fallback_cb'       => 'page_sidebar_navwalker::fallback',
                     'walker'            => new page_sidebar_navwalker()
                 );
