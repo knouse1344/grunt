@@ -75,8 +75,8 @@
                     'depth'           => 2,
                     // ADDED NAVWALKER HERE                
                     'container'         => 'div',
-                    'container_class'   => 'collapse navbar-collapse',
-                    'container_id'      => 'bs-example-navbar-collapse-1',
+                    'container_class'   => 'page-sidebar-nav',
+                    'container_id'      => 'page-sidebar-nav',
                     'menu_class'        => 'nav navbar-nav',
                     'fallback_cb'       => 'page_sidebar_navwalker::fallback',
                     'walker'            => new page_sidebar_navwalker()
