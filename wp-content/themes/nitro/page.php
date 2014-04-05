@@ -34,7 +34,7 @@
 		</div>
           
 		<!-- Right Sidebar -->
-		<div class="col-sm-3 col-xs-12">
+		<div class="col-sm-3 col-xs-12" id="sidebar">
 				
 				<?php 
 				$parent = array_reverse(get_post_ancestors($post->ID));
@@ -66,16 +66,26 @@
 				$args = array(
 				'theme_location'  => '',
 				'menu'            => $menuselected,
-				'container'       => 'div',
-				'container_class' => 'list-group',
-				'menu_class'      => 'list-group-item',
-				'echo'            => true,
-				'fallback_cb'     => 'wp_page_menu',
-				'items_wrap'      => '<ul class="list-unstyled list-group-item">%3$s</ul>',
-				'depth'           => 2
+				//'container'       => 'div',
+				//'container_class' => 'list-group',
+				//'menu_class'      => 'list-group-item',
+				//'echo'            => true,
+				//'fallback_cb'     => 'wp_page_menu',
+				//'items_wrap'      => '<ul class="list-unstyled list-group-item">%3$s</ul>',
+                'depth'           => 2,
+                // ADDED NAVWALKER HERE                
+                'container'         => 'div',
+                'container_class'   => 'collapse navbar-collapse',
+                'container_id'      => 'bs-example-navbar-collapse-1',
+                'menu_class'        => 'nav navbar-nav',
+                'fallback_cb'       => 'page_sidebar_navwalker::fallback',
+                'walker'            => new page_sidebar_navwalker())
+                				
 			);
 				wp_nav_menu( $args); ?>
 		
+            
+
 
 			<?php 
 				

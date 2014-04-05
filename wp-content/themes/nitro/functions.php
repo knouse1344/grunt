@@ -1,4 +1,6 @@
 <?php
+#REGISTER-PAGE-SIDEBAR-NAVWALKER
+require_once('page_sidebar_navwalker.php');
 
 #COMPILED-BOOTSTRAP
     function bootstrap() 
