@@ -84,6 +84,7 @@ class page_sidebar_navwalker extends Walker_Nav_Menu {
 				$atts['aria-haspopup']	= 'true';
 			} else {
 				$atts['href'] = ! empty( $item->url ) ? $item->url : '';
+                $atts['class']			= 'list-group-item';
 			}
 
 			$atts = apply_filters( 'nav_menu_link_attributes', $atts, $item, $args );
@@ -181,7 +182,7 @@ class page_sidebar_navwalker extends Walker_Nav_Menu {
 				$fb_output .= '>';
 			}
 
-			$fb_output .= '<div';
+			$fb_output .= '<ul';
 
 			if ( $menu_id )
 				$fb_output .= ' id="' . $menu_id . '"';
@@ -191,7 +192,7 @@ class page_sidebar_navwalker extends Walker_Nav_Menu {
 
 			$fb_output .= '>';
 			$fb_output .= '<a class="list-group-item" href="' . admin_url( 'nav-menus.php' ) . '">Add a menu</a>';
-			$fb_output .= '</div>';
+			$fb_output .= '</ul>';
 
 			if ( $container )
 				$fb_output .= '</' . $container . '>';
