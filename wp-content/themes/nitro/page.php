@@ -66,12 +66,7 @@
 				$args = array(
                     'theme_location'  => '',
                     'menu'            => $menuselected,
-                    //'container'       => 'div',
-                    //'container_class' => 'list-group',
-                    //'menu_class'      => 'list-group-item',
-                    //'echo'            => true,
-                    //'fallback_cb'     => 'wp_page_menu',
-                    //'items_wrap'      => '<ul class="list-unstyled list-group-item">%3$s</ul>',
+                    'items_wrap'      => '',
                     'depth'           => 2,
                     // ADDED NAVWALKER HERE                
                     'container'         => 'div',
