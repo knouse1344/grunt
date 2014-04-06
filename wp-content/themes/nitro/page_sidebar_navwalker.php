@@ -59,7 +59,8 @@ class page_sidebar_navwalker extends Walker_Nav_Menu {
 			$id = apply_filters( 'nav_menu_item_id', 'menu-item-'. $item->ID, $item, $args );
 			$id = $id ? ' id="' . esc_attr( $id ) . '"' : '';
 
-			$output .= $indent . '<div' . $id . $value . $class_names .'>';
+			//$output .= $indent . '<li' . $id . $value . $class_names .'>';
+            $output .= '<div>';
 
 			$atts = array();
 			$atts['title']  = ! empty( $item->title )	? $item->title	: '';
