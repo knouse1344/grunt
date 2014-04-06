@@ -274,8 +274,8 @@ background-color: #f2f2f2; /*@greyer*/
 }
                 
 .page-sidebar-nav a.list-group-item:hover, .page-sidebar-nav a.list-group-item:focus {
-background-color: #157BD4; /*@link-color*/
-color: white;
+    background-color: #157BD4; /*@link-color*/
+    color: white;
 }
                 
 #page-sidebar-nav .list-group {
@@ -284,6 +284,11 @@ margin-bottom:0;
 
 #page-sidebar-nav {
 margin-bottom:20px;
+}
+
+#page-sidebar-nav .list-group a.disabled:hover, #page-sidebar-nav .list-group a.disabled:focus {
+    color: #BCBCBC;
+    background-color: #f2f2f2;
 }
                 
 .divider {
