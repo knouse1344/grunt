@@ -285,6 +285,13 @@ margin-bottom:0;
 #page-sidebar-nav {
 margin-bottom:20px;
 }
+                
+.divider {
+    border-bottom: 2px solid #FFF8F8;
+    margin: 15px;
+    list-style: none;
+    box-shadow: 0px 0px 1px grey;
+}
 
 /* =MOBILE (SM) FIXES
 -------------------------------------------------------------- */
