@@ -15,10 +15,10 @@ class page_sidebar_navwalker extends Walker_Nav_Menu {
 	 * @param string $output Passed by reference. Used to append additional content.
 	 * @param int $depth Depth of page. Used for padding.
 	 */
-	public function start_lvl( &$output, $depth = 0, $args = array() ) {
-		$indent = str_repeat( "\t", $depth );
-		$output .= "\n$indent<div role=\"menu\" class=\"list-group\">\n";
-	}
+	//public function start_lvl( &$output, $depth = 0, $args = array() ) {
+	//	$indent = str_repeat( "\t", $depth );
+	//	$output .= "\n$indent<div role=\"menu\" class=\"list-group\">\n";
+	//}
 
 	/**
 	 * @see Walker::start_el()
@@ -31,7 +31,8 @@ class page_sidebar_navwalker extends Walker_Nav_Menu {
 	 * @param object $args
 	 */
 	public function start_el( &$output, $item, $depth = 0, $args = array(), $id = 0 ) {
-		//$indent = ( $depth ) ? str_repeat( "\t", $depth ) : '';
+		//Not sure what this does
+        $indent = ( $depth ) ? str_repeat( "\t", $depth ) : '';
 
 		/**
 		 * Dividers, Headers or Disabled
