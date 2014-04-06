@@ -31,7 +31,7 @@ class page_sidebar_navwalker extends Walker_Nav_Menu {
 	 * @param object $args
 	 */
 	public function start_el( &$output, $item, $depth = 0, $args = array(), $id = 0 ) {
-		$indent = ( $depth ) ? str_repeat( "\t", $depth ) : '';
+		//$indent = ( $depth ) ? str_repeat( "\t", $depth ) : '';
 
 		/**
 		 * Dividers, Headers or Disabled
