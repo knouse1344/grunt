@@ -271,10 +271,17 @@ border-bottom-left-radius: 0;
 background-color: #f2f2f2; /*@greyer*/
 }
                 
-a.list-group-item:hover, a.list-group-item:focus {
-text-decoration: none;
+.page-sidebar-nav a.list-group-item:hover, .page-sidebar-nav a.list-group-item:focus {
 background-color: #157BD4; /*@link-color*/
 color: white;
+}
+                
+#page-sidebar-nav .list-group {
+margin-bottom:0;
+}
+
+#page-sidebar-nav {
+margin-bottom:20px;
 }
 
 /* =MOBILE (SM) FIXES
