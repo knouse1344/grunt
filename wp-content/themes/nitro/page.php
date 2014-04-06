@@ -66,7 +66,7 @@
 				$args = array(
                     'theme_location'  => '',
                     'menu'            => $menuselected,
-                    'items_wrap'      => '',
+                    'items_wrap'      => %3$s,
                     'depth'           => 2,
                     // ADDED NAVWALKER HERE                
                     'container'         => 'div',
