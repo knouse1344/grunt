@@ -245,7 +245,17 @@ img {
     color: #000000; /*Needs to communicate that it is important but not a link*/
     margin-top: 0;
 }
-
+                
+#primary-content .nav-tabs {
+    border-bottom: 0;
+}                
+#primary-content .tab-content {
+padding-bottom: 0px;
+background-color: white;
+border: 1px solid #ddd;
+padding-top: 20px;
+}
+                
 /* =SIDEBAR
 -------------------------------------------------------------- */
 
