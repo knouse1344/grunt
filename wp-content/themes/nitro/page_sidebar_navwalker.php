@@ -8,18 +8,7 @@
 
 class page_sidebar_navwalker extends Walker_Nav_Menu {
 
-	/**
-	 * @see Walker::start_lvl()
-	 * @since 3.0.0
-	 *
-	 * @param string $output Passed by reference. Used to append additional content.
-	 * @param int $depth Depth of page. Used for padding.
-	 */
-	//public function start_lvl( &$output, $depth = 0, $args = array() ) {
-	//	$indent = str_repeat( "\t", $depth );
-	//	$output .= "\n$indent<div role=\"menu\" class=\"list-group\">\n";
-	//}
-
+    
 	/**
 	 * @see Walker::start_el()
 	 * @since 3.0.0
