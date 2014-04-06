@@ -253,13 +253,14 @@ img {
     margin-top: 40px;
 }
 
-#sidebar > .list-group a {
+#page-sidebar-nav .sub-menu {
 display: none;
 }
-                
-#sidebar .open > .list-group a {
+
+#page-sidebar-nav .open > .sub-menu {
 display: block;
-}
+}                
+
                 
 .page-sidebar-nav .list-group-item:last-child, .page-sidebar-nav .list-group-item:first-child {
     margin-bottom: -1px;
