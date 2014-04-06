@@ -193,7 +193,7 @@ class page_sidebar_navwalker extends Walker_Nav_Menu {
 
 			$fb_output .= '>';
 			$fb_output .= '<a class="list-group-item" href="' . admin_url( 'nav-menus.php' ) . '">Add a menu</a>';
-			$fb_output .= '</div>';
+			//$fb_output .= '</div>';
 
 			if ( $container )
 				$fb_output .= '</' . $container . '>';
