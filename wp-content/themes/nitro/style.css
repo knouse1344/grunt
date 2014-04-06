@@ -253,12 +253,12 @@ img {
     margin-top: 40px;
 }
 
-#page-sidebar-nav .sub-menu {
+.page-sidebar-nav .sub-menu {
 display: none;
 }
 
-#page-sidebar-nav .open > .sub-menu {
-display: block;
+.open .sub-menu {
+display: block!important;
 }                
 
                 
