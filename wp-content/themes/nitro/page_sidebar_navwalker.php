@@ -3,7 +3,7 @@
 /**
  * Class Name: page_sidebar_navwalker
  * GitHub URI: https://github.com/twittem/wp-bootstrap-navwalker
- * Description: A custom WordPress nav walker class to implement the Bootstrap 3 navigation style in a custom theme using the WordPress built in menu manager.
+ * Description: Customized from the Github Repo (above) to output <div list-group><a list-group-item>Link</a></div>
  */
 
 class page_sidebar_navwalker extends Walker_Nav_Menu {
@@ -69,7 +69,7 @@ class page_sidebar_navwalker extends Walker_Nav_Menu {
 			$id = apply_filters( 'nav_menu_item_id', 'menu-item-'. $item->ID, $item, $args );
 			$id = $id ? ' id="' . esc_attr( $id ) . '"' : '';
 
-			$output .= $indent . '<li' . $id . $value . $class_names .'>';
+			//$output .= $indent . '<li' . $id . $value . $class_names .'>';
 
 			$atts = array();
 			$atts['title']  = ! empty( $item->title )	? $item->title	: '';
