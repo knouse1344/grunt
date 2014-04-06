@@ -242,7 +242,7 @@ img {
 }
 
 #primary-content h2 {
-    color: #1469B4;
+    color: #000000; /*Needs to communicate that it is important but not a link*/
     margin-top: 0;
 }
 
@@ -253,6 +253,29 @@ img {
     margin-top: 40px;
 }
 
+#sidebar > .list-group a {
+display: none;
+}
+                
+#sidebar .open > .list-group a {
+display: block;
+}
+                
+.page-sidebar-nav .list-group-item:last-child {
+margin-bottom: 0;
+border-bottom-right-radius: 0;
+border-bottom-left-radius: 0;
+}
+
+.list-group-item-parent {
+background-color: #f2f2f2; /*@greyer*/
+}
+                
+a.list-group-item:hover, a.list-group-item:focus {
+text-decoration: none;
+background-color: #157BD4; /*@link-color*/
+color: white;
+}
 
 /* =MOBILE (SM) FIXES
 -------------------------------------------------------------- */
