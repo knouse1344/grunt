@@ -261,10 +261,12 @@ display: none;
 display: block;
 }
                 
-.page-sidebar-nav .list-group-item:last-child {
-margin-bottom: 0;
-border-bottom-right-radius: 0;
-border-bottom-left-radius: 0;
+.page-sidebar-nav .list-group-item:last-child, .page-sidebar-nav .list-group-item:first-child {
+    margin-bottom: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
 }
 
 .list-group-item-parent {

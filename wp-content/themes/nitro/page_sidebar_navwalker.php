@@ -183,7 +183,7 @@ class page_sidebar_navwalker extends Walker_Nav_Menu {
 				$fb_output .= '>';
 			}
 
-			$fb_output .= '<ul';
+			$fb_output .= '<div';
 
 			if ( $menu_id )
 				$fb_output .= ' id="' . $menu_id . '"';
@@ -193,7 +193,7 @@ class page_sidebar_navwalker extends Walker_Nav_Menu {
 
 			$fb_output .= '>';
 			$fb_output .= '<a class="list-group-item" href="' . admin_url( 'nav-menus.php' ) . '">Add a menu</a>';
-			$fb_output .= '</ul>';
+			$fb_output .= '</div>';
 
 			if ( $container )
 				$fb_output .= '</' . $container . '>';
