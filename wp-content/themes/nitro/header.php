@@ -124,7 +124,7 @@
         </nav><!-- HEADER NAV END -->
 
         <!-- SHOW PAGE BANNER -->        
-        <?php if ( is_page() ) { ?>
+        <?php if ( is_page() || 'product' == get_post_type() ) { ?>
                 
             <div class="page-banner">
                 <div class="container">
