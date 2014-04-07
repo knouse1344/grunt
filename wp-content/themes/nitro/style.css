@@ -259,8 +259,7 @@ img {
 }
 
 .page-sidebar-nav .sub-menu {
-    display: block;
-    -webkit-transition: opacity 3s ease;
+    -webkit-transition: all 3s ease;
     opacity: 0; 
     height: 0;
     overflow: hidden;
@@ -268,13 +267,12 @@ img {
 
 .open .sub-menu {
     opacity: 1;
-    -webkit-transition: opacity 3s ease;
+    -webkit-transition: all 3s ease;
     height: auto;
 }                
 
                 
 .page-sidebar-nav .list-group-item:last-child, .page-sidebar-nav .list-group-item:first-child {
-    margin-bottom: -1px;
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
     border-top-right-radius: 0;
