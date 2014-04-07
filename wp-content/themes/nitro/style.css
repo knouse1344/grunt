@@ -259,14 +259,16 @@ img {
 }
 
 .page-sidebar-nav .sub-menu {
-transition: opacity 2s linear;
-transform:translate(0);
-opacity: 1;
+    display: block;
+    -webkit-transition: opacity 1s ease-out;
+    opacity: 0; 
+    height: 0;
+    overflow: hidden;
 }
 
 .open .sub-menu {
-transform:translate(9999px);
-opacity:1;
+    opacity: 1;
+    height: auto;
 }                
 
                 
