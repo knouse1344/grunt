@@ -50,4 +50,4 @@ get_header(); ?>
 
 <?php 
 #TODO: footer('shop')
-get_footer( 'shop' ); ?>
+get_footer(); ?>
