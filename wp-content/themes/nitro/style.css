@@ -280,7 +280,7 @@ img {
 }
 
 .list-group-item-parent {
-background-color: #f2f2f2; /*@greyer*/
+    background-color: #f2f2f2; /*@greyer*/
 }
                 
 .page-sidebar-nav a.list-group-item:hover, .page-sidebar-nav a.list-group-item:focus {
@@ -289,11 +289,11 @@ background-color: #f2f2f2; /*@greyer*/
 }
                 
 #page-sidebar-nav .list-group {
-margin-bottom:0;
+    margin-bottom:0;
 }
 
 #page-sidebar-nav {
-margin-bottom:20px;
+    margin-bottom:20px;
 }
 
 #page-sidebar-nav .list-group a.disabled:hover, #page-sidebar-nav .list-group a.disabled:focus {
@@ -309,8 +309,16 @@ margin-bottom:20px;
 }
                 
 #page-sidebar-nav ul {
-padding-left: 0;
-margin-bottom: 0;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+          
+
+/* =PRODUCTS
+-------------------------------------------------------------- */                
+                
+.woocommerce-tabs .panel {
+    background-color: transparent;
 }
                 
                 
