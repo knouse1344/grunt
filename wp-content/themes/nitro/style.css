@@ -260,12 +260,15 @@ img {
 
 .page-sidebar-nav .sub-menu {
 display: none;
+opacity:0;
 transition: all 4s linear;  
 }
 
 .open .sub-menu {
 display: block!important;
-transition: all 4s linear;  
+opacity:1;
+transition: all 4s linear;
+
 }                
 
                 
