@@ -23,8 +23,8 @@
             </div><!-- HEADER LEFT END--> 
               
             <div class="col-xs-6 col-sm-9"><!--HEADER RIGHT START-->
-                            
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="">
+                
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#topnav"><!-- SPECIFY MOBILE MENU --> 
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -43,7 +43,7 @@
                     
                     <div class="row"><!-- PRIMARY MENU START -->
                         <div class="col-sm-12">
-                            <div class="collapse navbar-collapse" id="">
+                            <div class="collapse navbar-collapse" id="topnav">
                                 
                                     <ul class="nav navbar-nav navbar-right" id="primary">
                                         
@@ -62,7 +62,7 @@
                                                   <div class="col-sm-6">
                                                       <?php wp_nav_menu( array(
                                                         'theme_location' => 'resources',
-														'menu'            => 'Learning Center',
+														//'menu'            => 'Learning Center',
                                                         'echo'            => true,
                                                         'fallback_cb'     => 'wp_page_menu',
                                                         'items_wrap'      => '<ul class="list-unstyled">%3$s</ul>',
@@ -86,7 +86,7 @@
                                                       <h4>Services</h4>
                                                       <?php wp_nav_menu( array(
                                                         'theme_location' => 'services',
-														'menu'            => 'Solutions and Services',
+														//'menu'            => 'Solutions and Services',
                                                          'echo'            => true,
                                                         'fallback_cb'     => 'wp_page_menu',
                                                         'items_wrap'      => '<ul class="list-unstyled">%3$s</ul>',
@@ -96,7 +96,7 @@
                                                   <div class="col-sm-4"><h4>Products</h4>
                                                       <?php wp_nav_menu( array(
                                                         'theme_location' => 'products',
-														'menu'            => 'products',
+														//'menu'            => 'products',
                                                         'echo'            => true,
                                                         'fallback_cb'     => 'wp_page_menu',
                                                         'items_wrap'      => '<ul class="list-unstyled">%3$s</ul>',
