@@ -24,7 +24,7 @@
 							$naw_url = get_post_meta( $post->ID, '_cd_naw_url', true );
 							if ('' != $naw_url)
 							{
-								$siteurl = $naw_url;
+								$siteurl = '<a href="' .$naw_url. '" target="_blank" class="btn btn-info btn-xs" role="button">Visit Site</a>';
 							}
 							else
 							{
@@ -35,7 +35,7 @@
 						  <div class="caption">
 							<h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
 							<p><?php the_excerpt(); ?></p>
-							<p><a href="<?php the_permalink(); ?>" class="btn btn-primary btn-xs" role="button">Read More!</a> &nbsp; <a href="<?php echo $siteurl; ?>" target="_blank" class="btn btn-info btn-xs" role="button">Visit Site</a></p>
+							<p><a href="<?php the_permalink(); ?>" class="btn btn-primary btn-xs" role="button">Read More!</a> &nbsp; <?php echo $siteurl; ?></p>
 						  </div>
 						</div>
 					</div>
