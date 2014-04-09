@@ -5,7 +5,8 @@
 		<!--- Start Body Content --->
 		<div id="primary-content fourohfour" class="col-xs-12" role="main">                    
             <h1>404</h1>
-            <h2>Not Found</h2>       
+            <h2>I'm sorry, could we help you find what you were looking for?</h2>
+            <p><?php get_search_form(); ?></p>
         </div>
           
     </div>    
