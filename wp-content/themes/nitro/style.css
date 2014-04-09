@@ -110,10 +110,13 @@ a img.aligncenter {
     border: 1px solid rgb(255, 255, 255);
 }
 #primary > li > a {
-    font-size: 1.2em;
-    font-weight: 400;
-    text-transform: uppercase;
-    color:#3075b0;
+font-size: 1.2em;
+font-weight: 200;
+text-transform: uppercase;
+color: #3075b0;
+}
+#primary > li > a:hover {
+color: rgb(82, 98, 113);
 }
 #search-input {
     max-width: 175px;
@@ -163,15 +166,14 @@ a img.aligncenter {
     vertical-align: top;
     text-decoration: none;
 }
-#header .navbar-brand {
-    margin: 0;
-    padding: 0;
-}
-
 @media only screen and (min-width: 640px)  {
     .navbar-brand {
         margin-top: 21px;
     }               
+}
+#header .navbar-brand {
+    margin: 0;
+    padding: 0;
 }
        
 
