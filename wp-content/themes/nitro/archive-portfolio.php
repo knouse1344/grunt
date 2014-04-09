@@ -24,7 +24,7 @@
 							$naw_url = get_post_meta( $post->ID, '_cd_naw_url', true );
 							if ('' != $naw_url)
 							{
-								$siteurl = '<a href="' .$naw_url. '" target="_blank" class="btn btn-info btn-xs" role="button">Visit Site</a>';
+								$siteurl = '<a href="' .$naw_url. '" target="_blank" class="btn btn-info btn-xs" role="button">Visit Site </a>';
 							}
 							else
 							{
