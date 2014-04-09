@@ -317,11 +317,22 @@ img {
           
 
 /* =PRODUCTS
--------------------------------------------------------------- */                
-                
+-------------------------------------------------------------- */                                
 .woocommerce-tabs .panel {
     background-color: transparent;
 }
+                             
+                
+/* =404
+-------------------------------------------------------------- */                   
+#fourohfour {
+    text-align: center;
+}
+#fourohfour > h1 {
+    font-size: 11em;
+    letter-spacing: .1em;
+}
+                
                 
                 
 /* =MOBILE (SM) FIXES
