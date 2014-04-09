@@ -19,7 +19,8 @@ require_once('page_sidebar_navwalker.php');
             'label' => 'Email Campaign',
             'public' => true,
             'taxonomies' => array( 'category', 'post_tag'),
-            'supports' => array( 'title', 'editor', 'post_tag' ) 
+            'supports' => array( 'title', 'editor', 'post_tag' ),
+			'has_archive' => true,
         );
         register_post_type( 'mailings', $args );
     }
@@ -32,7 +33,8 @@ require_once('page_sidebar_navwalker.php');
             'label'  => 'Press',
             'public' => true,
 			'taxonomies' => array( 'category', 'post_tag'),
-            'supports' => array( 'title', 'editor', 'post_tag' )            
+            'supports' => array( 'title', 'editor', 'post_tag' ),
+			'has_archive' => true,            
         );
         register_post_type( 'press', $args );
     }
@@ -45,7 +47,8 @@ require_once('page_sidebar_navwalker.php');
             'label'  => 'Success Story',
             'public' => true,
             'taxonomies' => array( 'category', 'post_tag'),
-            'supports' => array( 'title', 'editor', 'post_tag' )
+            'supports' => array( 'title', 'editor', 'post_tag' ),
+			'has_archive' => true,
             
         );
         register_post_type( 'successstory', $args );
@@ -61,12 +64,25 @@ require_once('page_sidebar_navwalker.php');
             'publicly_queryable' => false,
             'has_archive' => false,
 			'taxonomies' => array( 'category', 'post_tag'),
-            'supports' => array( 'title', 'editor', 'post-format', 'post_tag' )
+            'supports' => array( 'title', 'editor', 'post-format', 'post_tag' ),
+			'has_archive' => true,
         );
         register_post_type( 'calltoaction', $args );
     }
     add_action( 'init', 'calltoaction_custom_init' );
     
+	#PORTFOLIO-POST-TYPE
+	function portfolio_custom_init() {
+		$args = array( 
+			'label'  => 'Web Portfolio',
+			'public' => true,
+			'taxonomies' => array( 'category', 'post_tag'),
+			'supports' => array( 'title', 'editor', 'post_tag', 'thumbnail' ) ,
+			'has_archive' => true,			
+		);
+		register_post_type( 'portfolio', $args );
+	}
+	add_action( 'init', 'portfolio_custom_init' );
 
     #@TODO: CALLTOACTION-POST-FORMAT
         # function imagemeta-post-format
@@ -220,6 +236,7 @@ if(!function_exists('get_post_top_ancestor_id')){
 function cd_add_naw_meta(){
     add_meta_box( 'naw-meta', __( 'Custom Footer Options' ), 'cd_naw_meta_cb', 'page', 'advanced', 'high' );
 	add_meta_box( 'naw-meta', __( 'Webinar Details' ), 'cd_naw_meta_wb', 'product', 'side', 'high' );
+	add_meta_box( 'naw-meta', __( 'Portfolio Options' ), 'cd_naw_meta_np', 'portfolio', 'side', 'high' );
 }
 add_action( 'add_meta_boxes', 'cd_add_naw_meta' );
 
@@ -371,7 +388,47 @@ function cd_naw_meta_cb( $post ){
             update_post_meta( $id, '_cd_naw_end_time', wp_kses( $_POST['_cd_naw_end_time'], $allowed ) );
     }
     add_action( 'save_post', 'cd_naw_meta_wbsave' );
+	
+#META BOX FOR PORTFOLIO
+	function cd_naw_meta_np( $post )
+	{
+		// Get values for filling in the inputs if we have them.
+		$naw_url = get_post_meta( $post->ID, '_cd_naw_url', true );
 
+		// Nonce to verify intention later
+		wp_nonce_field( 'save_naw_meta', 'naw_nonce' );
+		?>
+		<p>
+			<label for="naw-url">Website URL:</label>
+			<input id="naw-url" type="test" name="_cd_naw_url" value="<?php echo $naw_url?>">
+		</p>
+
+		<?php
+	}
+
+/* --- SAVE META BOX VALUES for PORTFOLIO--- */
+add_action( 'save_post', 'cd_naw_meta_npsave' );
+	function cd_naw_meta_npsave( $id )
+	{
+		if( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) return;
+		 
+		if( !isset( $_POST['naw_nonce'] ) || !wp_verify_nonce( $_POST['naw_nonce'], 'save_naw_meta' ) ) return;
+		 
+		if( !current_user_can( 'edit_post' ) ) return;
+		 
+		$allowed = array(
+			'p' => array(),
+			'a' => array( // on allow a tags
+					'href' => array() // and those anchors can only have href attribute
+					),
+		);
+		 
+		if( isset( $_POST['_cd_naw_url'] ) )
+			update_post_meta( $id, '_cd_naw_url', wp_kses( $_POST['_cd_naw_url'], $allowed ) );
+
+	}
+	
+	
 #FILTER TO ADD CLASS
 	add_filter('wp_list_pages', create_function('$t', 'return str_replace("<li ", "<li class=\"list-group-item\" ", $t);'));
 	
