@@ -17,7 +17,7 @@ After the most recent "Deep Dive" where we discussed a wide array of topics I de
 * Wordpress & Dependancy Management (using grunt)
 * Wordpress & Project Setup
 
-![alt text](http://i.imgur.com/IVB1Atv.jpg "One Does Not Simply Click Install")
+![alt text](https://cdn.tutsplus.com/wp/authors/tom/Screen-Shot-2013-01-09-at-12.21.02-PM.png "One Does Not Simply Put Files Anywhere")
 
 * Wordpress & Bootstrap
 * Wordpress & Less
