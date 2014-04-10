@@ -166,14 +166,16 @@ color: rgb(82, 98, 113);
     vertical-align: top;
     text-decoration: none;
 }
-@media only screen and (min-width: 640px)  {
-    .navbar-brand {
-        margin-top: 21px;
-    }               
-}
+
 #header .navbar-brand {
     margin: 0;
     padding: 0;
+}
+
+@media only screen and (min-width: 640px)  {
+    #header .navbar-brand {
+        margin-top: 21px;
+    }               
 }
        
 
