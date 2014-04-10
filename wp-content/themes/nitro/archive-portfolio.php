@@ -35,7 +35,7 @@
 							<p><?php the_excerpt(); ?></p>
 							<p><a href="<?php the_permalink(); ?>" class="" role="button">Read More!</a></p>
 						  </div>
-						</div>
+						
 					</div>
 				<?php endwhile; ?>
 				<!-- Pagination LINKS Disabled
