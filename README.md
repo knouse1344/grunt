@@ -5,6 +5,7 @@ Node.js installed, NPM installed, Grunt running
 * Edited .less files (and created new ones)
 * Edited .js files
 * Both .less & .js tracked and compiled with grunt
+
 Still self-educating with specific tasks like 'grunt Less' and 'grunt uglify'
 
 ## Motivation
