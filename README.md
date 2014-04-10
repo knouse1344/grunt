@@ -1,10 +1,12 @@
-Example Grunt Project
+Grunt Work
 =====================
 ## Updated in Bryan's Private Repo
-## Node.js installed, NPM installed, Grunt running
-## 
-##
-##
+Node.js installed, NPM installed, Grunt running
+* Edited .less files (and created new ones)
+* Edited .js files
+* Both .less & .js tracked and compiled with grunt
+Still self-educating with specific tasks like 'grunt Less' and 'grunt uglify'
+
 ## Motivation
 
 After the most recent "Deep Dive" where we discussed a wide array of topics I decided to create an repository we could all use to branch out (pun intended). 
