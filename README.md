@@ -1,6 +1,10 @@
 Example Grunt Project
 =====================
-
+## Updated in Bryan's Private Repo
+## Node.js installed, NPM installed, Grunt running
+## 
+##
+##
 ## Motivation
 
 After the most recent "Deep Dive" where we discussed a wide array of topics I decided to create an repository we could all use to branch out (pun intended). 
