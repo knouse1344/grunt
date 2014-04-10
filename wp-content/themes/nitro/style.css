@@ -262,14 +262,14 @@ img {
 
 .page-sidebar-nav .sub-menu {
     -webkit-transition: all 3s ease;
-    opacity: 0; 
+    opacity: 0.5; 
     height: 0;
     overflow: hidden;
 }
 
 .open .sub-menu {
     opacity: 1;
-    -webkit-transition: all 3s ease;
+    -webkit-transition: all 1.5s ease;
     height: auto;
 }                
 

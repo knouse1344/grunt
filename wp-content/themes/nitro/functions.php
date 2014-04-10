@@ -78,7 +78,8 @@ require_once('page_sidebar_navwalker.php');
 			'public' => true,
 			'taxonomies' => array( 'category', 'post_tag'),
 			'supports' => array( 'title', 'editor', 'post_tag', 'thumbnail' ) ,
-			'has_archive' => true,			
+			'has_archive' => true,	
+            'rewrite' => array('slug' => 'web-portfolio'),
 		);
 		register_post_type( 'portfolio', $args );
 	}
