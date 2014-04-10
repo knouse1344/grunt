@@ -5071,12 +5071,6 @@ button.close {
   border: 0;
   -webkit-appearance: none;
 }
-.thisisalongclass {
-  border: 1px solid;
-  background-color: #c12c13;
-  width: 400px;
-  height: 3.14159265358979323846264338%;
-}
 .box_of_sand {
   border: 1px double;
 }

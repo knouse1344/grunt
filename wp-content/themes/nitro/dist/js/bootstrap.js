@@ -1818,6 +1818,7 @@
 
   // AFFIX CLASS DEFINITION
   // ======================
+  // =================== //
 
   var Affix = function (element, options) {
     this.options = $.extend({}, Affix.DEFAULTS, options)
