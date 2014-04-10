@@ -1,7 +1,7 @@
 Grunt Work
 =====================
 ## Updated in Bryan's Private Repo
-Node.js installed, NPM installed, Grunt running
+Node.js & NPM installed, Grunt running
 * Edited .less files (and created new ones)
 * Edited .js files
 * Both .less & .js tracked and compiled with grunt
