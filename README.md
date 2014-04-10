@@ -15,4 +15,3 @@ Invovled the csscomb package and specifically the versioning with:
 * vow-queue
 Running `npm update` solved some issues, editing 'dependencies' in node_modules/grunt-csscomb/node_modules/csscomb to bring those three up to version seemed to help as well.
 
-![alt text](http://i.imgur.com/IVB1Atv.jpg "One Does Not Simply 'click install'")
